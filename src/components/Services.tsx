@@ -54,7 +54,7 @@ export default function Services() {
   });
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-b from-[#697179] via-[#5A6168] to-[#737B83]">
+    <section id="services" className="section-padding bg-[#000000]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -83,23 +83,23 @@ export default function Services() {
               className="group"
             >
               <div className="card-tilt glass rounded-[1.75rem] p-8 h-full relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/0 to-[#FFD700]/0 group-hover:from-[#FFD700]/10 group-hover:to-transparent transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF44F]/0 to-[#FFF44F]/0 transition-all duration-500 group-hover:from-[#FFF44F]/10 group-hover:to-transparent" />
 
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#FFD700]/20 to-[#FFC107]/10 flex items-center justify-center mb-6 group-hover:from-[#FFD700] group-hover:to-[#FFC107] transition-all duration-300">
-                    <service.icon className="w-7 h-7 text-[#FFD700] group-hover:text-[#0A0A0A] transition-colors duration-300" />
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#FFF44F]/12 transition-all duration-300 group-hover:bg-[#FFF44F]">
+                    <service.icon className="w-7 h-7 text-[#FFF44F] transition-colors duration-300 group-hover:text-[#000000]" />
                   </div>
 
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-[#FFD700] transition-colors duration-300">
+                  <h3 className="mb-3 text-xl font-semibold transition-colors duration-300 group-hover:text-[#FFF44F]">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-400 mb-6 leading-8">{service.description}</p>
+                  <p className="mb-6 leading-8 text-white/78">{service.description}</p>
 
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, j) => (
-                      <li key={j} className="flex items-center gap-2 text-sm text-gray-500">
-                        <span className="w-1.5 h-1.5 bg-[#FFD700] rounded-full" />
+                      <li key={j} className="flex items-center gap-2 text-sm text-white/62">
+                        <span className="h-1.5 w-1.5 rounded-full bg-[#FFF44F]" />
                         {feature}
                       </li>
                     ))}
@@ -107,7 +107,7 @@ export default function Services() {
 
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 text-[#FFD700] font-medium text-sm group-hover:gap-3 transition-all duration-300"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-[#FFF44F] transition-all duration-300 group-hover:gap-3"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4" />

@@ -104,21 +104,21 @@ export default function HeroBackground() {
       />
       
       {/* Animated gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-[100px] animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FFD700]/5 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/4 left-1/4 h-96 w-96 animate-pulse rounded-full bg-[#FFF44F]/12 blur-[100px]" />
+      <div className="absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse rounded-full bg-[#FFF44F]/8 blur-[100px]" style={{ animationDelay: '1s' }} />
       
       {/* Grid pattern */}
       <div 
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(#FFD700 1px, transparent 1px), linear-gradient(90deg, #FFD700 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(#FFF44F 1px, transparent 1px), linear-gradient(90deg, #FFF44F 1px, transparent 1px)`,
           backgroundSize: '60px 60px',
         }}
       />
       
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#5A6168] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#5A6168]/55 via-transparent to-[#5A6168]/55 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#000000] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#000000]/70 via-transparent to-[#000000]/70 pointer-events-none" />
     </div>
   );
 }

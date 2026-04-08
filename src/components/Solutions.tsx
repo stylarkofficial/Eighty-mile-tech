@@ -52,7 +52,7 @@ export default function Solutions() {
   });
 
   return (
-    <section id="solutions" className="section-padding bg-gradient-to-b from-[#687078] via-[#5A6168] to-[#727A82]">
+    <section id="solutions" className="section-padding bg-[#000000]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -82,23 +82,23 @@ export default function Solutions() {
             >
               <div className="flex-1">
                 <div className="glass rounded-[2rem] p-8 md:p-10 h-full">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#FFD700] to-[#FFC107] flex items-center justify-center mb-6">
-                    <solution.icon className="w-7 h-7 text-[#0A0A0A]" />
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-[#FFF44F]">
+                    <solution.icon className="w-7 h-7 text-[#000000]" />
                   </div>
 
                   <h3 className="text-2xl font-semibold mb-4">{solution.title}</h3>
 
-                  <p className="text-gray-400 mb-6 leading-8">{solution.description}</p>
+                  <p className="mb-6 leading-8 text-white/78">{solution.description}</p>
 
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="px-4 py-2 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30">
-                      <span className="text-[#FFD700] font-semibold">{solution.stats}</span>
+                    <div className="rounded-full border border-[#FFF44F]/30 bg-[#FFF44F]/10 px-4 py-2">
+                      <span className="font-semibold text-[#FFF44F]">{solution.stats}</span>
                     </div>
                   </div>
 
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 text-[#FFD700] font-medium hover:gap-3 transition-all duration-300"
+                    className="inline-flex items-center gap-2 font-medium text-[#FFF44F] transition-all duration-300 hover:gap-3"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4" />
@@ -113,11 +113,11 @@ export default function Solutions() {
                     alt={solution.title}
                     className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#5A6168] via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent" />
                   <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-black/40 backdrop-blur-sm">
-                    <solution.icon className="w-7 h-7 text-[#FFD700]" />
+                    <solution.icon className="w-7 h-7 text-[#FFF44F]" />
                   </div>
-                  <div className="absolute inset-0 border-2 border-[#FFD700]/10 rounded-[2rem] group-hover:border-[#FFD700]/30 transition-colors duration-300" />
+                  <div className="absolute inset-0 rounded-[2rem] border-2 border-[#FFF44F]/10 transition-colors duration-300 group-hover:border-[#FFF44F]/30" />
                 </div>
               </div>
             </motion.div>

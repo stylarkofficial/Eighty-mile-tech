@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #FFD700;
-  --color-primary-dark: #FFC107;
-  --color-dark: #5a6168;
-  --color-dark-grey: #474d54;
-  --color-grey: #3a4046;
-  --color-light-grey: #7b8289;
+  --color-primary: #FFF44F;
+  --color-primary-dark: #FFF44F;
+  --color-dark: #000000;
+  --color-dark-grey: #000000;
+  --color-grey: #000000;
+  --color-light-grey: #FFFFFF;
   --font-family-sans: 'Inter', sans-serif;
 }
 
@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #5a6168;
+  background-color: #000000;
   color: #ffffff;
   overflow-x: hidden;
   line-height: 1.5;
@@ -39,46 +39,46 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #5a6168;
+  background: #000000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFD700;
+  background: #FFF44F;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFC107;
+  background: #FFF44F;
 }
 
 .glass {
-  background: rgba(31, 31, 31, 0.6);
+  background: rgba(0, 0, 0, 0.72);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 244, 79, 0.18);
 }
 
 .glass-dark {
-  background: rgba(10, 10, 10, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 244, 79, 0.18);
 }
 
 .glow {
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 0 40px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 244, 79, 0.35), 0 0 40px rgba(255, 244, 79, 0.15);
 }
 
 .glow-text {
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.3);
+  text-shadow: 0 0 20px rgba(255, 244, 79, 0.45), 0 0 40px rgba(255, 244, 79, 0.18);
 }
 
 .glow-sm {
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2), 0 0 20px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 0 10px rgba(255, 244, 79, 0.28), 0 0 20px rgba(255, 244, 79, 0.12);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #FFD700 0%, #FFC107 50%, #FFE066 100%);
+  background: linear-gradient(135deg, #FFF44F 0%, #FFF44F 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -86,7 +86,7 @@ body {
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, #474d54, #5a6168);
+  background: linear-gradient(135deg, #000000, #000000);
   border-radius: 16px;
 }
 
@@ -94,15 +94,15 @@ body {
   content: '';
   position: absolute;
   inset: -2px;
-  background: linear-gradient(135deg, #FFD700, transparent, #FFD700);
+  background: linear-gradient(135deg, #FFF44F, transparent, #FFF44F);
   border-radius: 18px;
   z-index: -1;
   opacity: 0.5;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #FFD700 0%, #FFC107 100%);
-  color: #0A0A0A;
+  background: #FFF44F;
+  color: #000000;
   font-weight: 600;
   padding: 14px 32px;
   border-radius: 8px;
@@ -113,22 +113,22 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(255, 244, 79, 0.35);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #FFD700;
+  color: #FFF44F;
   font-weight: 600;
   padding: 14px 32px;
   border-radius: 8px;
-  border: 2px solid #FFD700;
+  border: 2px solid #FFF44F;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(255, 244, 79, 0.12);
   transform: translateY(-2px);
 }
 
@@ -150,7 +150,7 @@ body {
 }
 
 .section-kicker {
-  color: #FFD700;
+  color: #FFF44F;
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 600;
@@ -167,7 +167,7 @@ body {
 }
 
 .section-copy {
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.78);
   font-size: clamp(1rem, 1.6vw, 1.125rem);
   line-height: 1.9;
   margin-inline: auto;
@@ -182,7 +182,7 @@ body {
 
 .card-tilt:hover {
   transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) translateY(-10px);
-  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(255, 244, 79, 0.18);
 }
 
 @keyframes float {

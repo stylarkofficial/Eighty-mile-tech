@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
 
   return (
     <section id="why-us" className="section-padding relative overflow-hidden">
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FFD700]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -74,14 +74,14 @@ export default function WhyChooseUs() {
             >
               <div className="glass rounded-[1.5rem] p-7 md:p-8 h-full hover:glow-sm transition-all duration-300">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[#FFD700]/10 flex items-center justify-center shrink-0 group-hover:bg-[#FFD700] transition-all duration-300">
-                    <reason.icon className="w-6 h-6 text-[#FFD700] group-hover:text-[#0A0A0A] transition-colors duration-300" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10 transition-all duration-300 group-hover:bg-[#FFF44F]">
+                    <reason.icon className="h-6 w-6 text-[#FFF44F] transition-colors duration-300 group-hover:text-[#000000]" />
                   </div>
                   <div>
-                    <h3 className="mb-3 text-lg font-semibold group-hover:text-[#FFD700] transition-colors duration-300">
+                    <h3 className="mb-3 text-lg font-semibold transition-colors duration-300 group-hover:text-[#FFF44F]">
                       {reason.title}
                     </h3>
-                    <p className="text-sm leading-7 text-gray-400">{reason.description}</p>
+                    <p className="text-sm leading-7 text-white/78">{reason.description}</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-12 grid gap-5 rounded-[2rem] border border-white/8 bg-white/[0.03] p-8 md:grid-cols-2 md:p-10"
+          className="mt-12 grid gap-5 rounded-[2rem] border border-[#FFF44F]/18 bg-white/[0.03] p-8 md:grid-cols-2 md:p-10"
         >
           {[
             'Dedicated project managers for every engagement',
@@ -104,8 +104,8 @@ export default function WhyChooseUs() {
             'Continuous innovation and upgrades',
           ].map((benefit, i) => (
             <div key={i} className="flex items-center gap-3">
-              <CheckCircle2 className="w-5 h-5 text-[#FFD700] shrink-0" />
-              <span className="text-gray-300 leading-7">{benefit}</span>
+              <CheckCircle2 className="h-5 w-5 shrink-0 text-[#FFF44F]" />
+              <span className="leading-7 text-white/82">{benefit}</span>
             </div>
           ))}
         </motion.div>

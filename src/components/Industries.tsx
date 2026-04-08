@@ -46,8 +46,8 @@ export default function Industries() {
 
   return (
     <section id="industries" className="section-padding relative overflow-hidden">
-      <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#FFD700]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#FFD700]/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
+      <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -77,18 +77,18 @@ export default function Industries() {
               className="group"
             >
               <div className="glass rounded-[1.5rem] p-6 h-full cursor-pointer hover:glow-sm transition-all duration-300 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFD700]/0 to-transparent group-hover:from-[#FFD700]/10 transition-all duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF44F]/0 to-transparent transition-all duration-300 group-hover:from-[#FFF44F]/10" />
 
                 <div className="relative z-10">
-                  <div className="w-12 h-12 rounded-lg bg-[#FFD700]/10 flex items-center justify-center mb-4 group-hover:bg-[#FFD700] transition-all duration-300">
-                    <industry.icon className="w-6 h-6 text-[#FFD700] group-hover:text-[#0A0A0A] transition-colors duration-300" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#FFF44F]/10 transition-all duration-300 group-hover:bg-[#FFF44F]">
+                    <industry.icon className="h-6 w-6 text-[#FFF44F] transition-colors duration-300 group-hover:text-[#000000]" />
                   </div>
 
-                  <h3 className="font-semibold mb-3 group-hover:text-[#FFD700] transition-colors duration-300">
+                  <h3 className="mb-3 font-semibold transition-colors duration-300 group-hover:text-[#FFF44F]">
                     {industry.name}
                   </h3>
 
-                  <p className="text-gray-500 text-sm leading-7">{industry.description}</p>
+                  <p className="text-sm leading-7 text-white/72">{industry.description}</p>
                 </div>
               </div>
             </motion.div>

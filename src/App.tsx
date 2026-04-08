@@ -15,13 +15,13 @@ const Contact = lazy(() => import('./components/Contact'));
 
 const SectionLoader = () => (
   <div className="min-h-[400px] flex items-center justify-center">
-    <div className="w-12 h-12 border-4 border-[#FFD700]/20 border-t-[#FFD700] rounded-full animate-spin" />
+    <div className="w-12 h-12 border-4 border-[#FFF44F]/20 border-t-[#FFF44F] rounded-full animate-spin" />
   </div>
 );
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#5A6168] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#000000] text-white overflow-x-hidden">
       <Navigation />
       <main>
         <Hero />

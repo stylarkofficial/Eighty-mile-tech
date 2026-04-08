@@ -115,7 +115,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="section-padding bg-gradient-to-b from-[#666D75] via-[#5A6168] to-[#6F767E]"
+      className="section-padding bg-[#000000]"
     >
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -144,7 +144,7 @@ export default function Contact() {
             <div className="glass rounded-[2rem] p-8 md:p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-300">
+                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-white/82">
                     Full Name *
                   </label>
                   <input
@@ -154,13 +154,13 @@ export default function Contact() {
                     value={formState.name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-lg border border-gray-700 bg-[#1F1F1F] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFD700] focus:outline-none"
+                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
                     placeholder="Guru prasadh"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-gray-300">
+                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-white/82">
                     Email Address *
                   </label>
                   <input
@@ -170,13 +170,13 @@ export default function Contact() {
                     value={formState.email}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-lg border border-gray-700 bg-[#1F1F1F] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFD700] focus:outline-none"
+                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
                     placeholder="guruprasadh@gmail.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="mb-2 block text-sm font-medium text-gray-300">
+                  <label htmlFor="company" className="mb-2 block text-sm font-medium text-white/82">
                     Company Name
                   </label>
                   <input
@@ -185,13 +185,13 @@ export default function Contact() {
                     name="company"
                     value={formState.company}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-gray-700 bg-[#1F1F1F] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFD700] focus:outline-none"
+                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
                     placeholder="Your Company Inc."
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-gray-300">
+                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-white/82">
                     Message *
                   </label>
                   <textarea
@@ -201,7 +201,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full resize-none rounded-lg border border-gray-700 bg-[#1F1F1F] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFD700] focus:outline-none"
+                    className="w-full resize-none rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -234,7 +234,7 @@ export default function Contact() {
                     className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-sm ${
                       submitState === 'error'
                         ? 'border-red-500/30 bg-red-500/10 text-red-200'
-                        : 'border-[#FFD700]/25 bg-[#FFD700]/10 text-[#FFE066]'
+                        : 'border-[#FFF44F]/25 bg-[#FFF44F]/10 text-[#FFF44F]'
                     }`}
                   >
                     {submitState === 'error' ? (
@@ -260,14 +260,14 @@ export default function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFD700]/10">
-                    <Mail className="h-6 w-6 text-[#FFD700]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
+                    <Mail className="h-6 w-6 text-[#FFF44F]" />
                   </div>
                   <div>
                     <p className="mb-1 font-medium">Email Us</p>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-gray-400 transition-colors duration-300 hover:text-[#FFD700]"
+                      className="text-white/78 transition-colors duration-300 hover:text-[#FFF44F]"
                     >
                       {CONTACT_EMAIL}
                     </a>
@@ -275,14 +275,14 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFD700]/10">
-                    <Phone className="h-6 w-6 text-[#FFD700]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
+                    <Phone className="h-6 w-6 text-[#FFF44F]" />
                   </div>
                   <div>
                     <p className="mb-1 font-medium">Call Us</p>
                     <a
                       href="tel:+1234567890"
-                      className="text-gray-400 transition-colors duration-300 hover:text-[#FFD700]"
+                      className="text-white/78 transition-colors duration-300 hover:text-[#FFF44F]"
                     >
                       +1 (234) 567-890
                     </a>
@@ -290,12 +290,12 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFD700]/10">
-                    <MapPin className="h-6 w-6 text-[#FFD700]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
+                    <MapPin className="h-6 w-6 text-[#FFF44F]" />
                   </div>
                   <div>
                     <p className="mb-1 font-medium">Visit Us</p>
-                    <p className="text-gray-400">
+                    <p className="text-white/78">
                       123 Innovation Drive
                       <br />
                       Tech District, San Francisco
@@ -309,12 +309,12 @@ export default function Contact() {
 
             <div className="glass rounded-[2rem] p-8 md:p-10">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFD700]/10">
-                  <MessageCircle className="h-6 w-6 text-[#FFD700]" />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
+                  <MessageCircle className="h-6 w-6 text-[#FFF44F]" />
                 </div>
                 <div>
                   <h3 className="mb-2 text-xl font-semibold">Fast Response</h3>
-                  <p className="leading-8 text-gray-400">
+                  <p className="leading-8 text-white/78">
                     Share your requirement and we will get back to you within 24 hours with a
                     clear next step.
                   </p>

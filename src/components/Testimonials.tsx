@@ -64,7 +64,7 @@ export default function Testimonials() {
   return (
     <section className="section-padding relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#FFD700]/5 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-[#FFF44F]/8 blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6" ref={ref}>
         <motion.div
@@ -73,7 +73,7 @@ export default function Testimonials() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="text-[#FFD700] text-sm font-semibold tracking-wider uppercase">
+          <span className="text-sm font-semibold uppercase tracking-wider text-[#FFF44F]">
             Testimonials
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">
@@ -91,7 +91,7 @@ export default function Testimonials() {
         >
           <div className="glass rounded-2xl p-8 md:p-12 relative">
             {/* Quote icon */}
-            <Quote className="w-12 h-12 text-[#FFD700]/20 absolute top-8 left-8" />
+            <Quote className="absolute left-8 top-8 h-12 w-12 text-[#FFF44F]/20" />
 
             <AnimatePresence mode="wait">
               <motion.div
@@ -105,19 +105,19 @@ export default function Testimonials() {
                 {/* Stars */}
                 <div className="flex justify-center gap-1 mb-6">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-[#FFD700] fill-[#FFD700]" />
+                    <Star key={i} className="h-5 w-5 fill-[#FFF44F] text-[#FFF44F]" />
                   ))}
                 </div>
 
                 {/* Quote */}
-                <p className="text-xl md:text-2xl text-gray-200 leading-relaxed mb-8">
+                <p className="mb-8 text-xl leading-relaxed text-white/88 md:text-2xl">
                   "{testimonials[currentIndex].quote}"
                 </p>
 
                 {/* Author */}
                 <div>
                   <p className="font-bold text-lg">{testimonials[currentIndex].author}</p>
-                  <p className="text-gray-400">{testimonials[currentIndex].role}</p>
+                  <p className="text-white/70">{testimonials[currentIndex].role}</p>
                 </div>
               </motion.div>
             </AnimatePresence>
@@ -126,7 +126,7 @@ export default function Testimonials() {
             <div className="flex justify-center items-center gap-4 mt-8">
               <button
                 onClick={prevTestimonial}
-                className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FFD700] hover:text-[#FFD700] transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-colors duration-300 hover:border-[#FFF44F] hover:text-[#FFF44F]"
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
@@ -137,7 +137,7 @@ export default function Testimonials() {
                     key={i}
                     onClick={() => setCurrentIndex(i)}
                     className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      i === currentIndex ? 'w-6 bg-[#FFD700]' : 'bg-gray-600'
+                      i === currentIndex ? 'w-6 bg-[#FFF44F]' : 'bg-white/30'
                     }`}
                   />
                 ))}
@@ -145,7 +145,7 @@ export default function Testimonials() {
 
               <button
                 onClick={nextTestimonial}
-                className="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FFD700] hover:text-[#FFD700] transition-colors duration-300"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/20 transition-colors duration-300 hover:border-[#FFF44F] hover:text-[#FFF44F]"
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
@@ -159,7 +159,7 @@ export default function Testimonials() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <p className="text-center text-gray-500 text-sm mb-8">
+          <p className="mb-8 text-center text-sm text-white/58">
             Trusted by innovative companies worldwide
           </p>
           
@@ -171,7 +171,7 @@ export default function Testimonials() {
                 animate={inView ? { opacity: 0.5 } : {}}
                 transition={{ duration: 0.5, delay: 0.5 + i * 0.05 }}
                 whileHover={{ opacity: 1 }}
-                className="text-xl md:text-2xl font-bold text-gray-500 hover:text-[#FFD700] transition-colors duration-300 cursor-pointer"
+                className="cursor-pointer text-xl font-bold text-white/55 transition-colors duration-300 hover:text-[#FFF44F] md:text-2xl"
               >
                 {logo}
               </motion.div>

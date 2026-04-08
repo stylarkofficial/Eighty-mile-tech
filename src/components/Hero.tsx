@@ -14,8 +14,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#FFD700] font-medium">
-            <span className="w-2 h-2 bg-[#FFD700] rounded-full animate-pulse" />
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-[#FFF44F] font-medium">
+            <span className="w-2 h-2 bg-[#FFF44F] rounded-full animate-pulse" />
             Limited consultation slots available
           </span>
         </motion.div>
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mx-auto mb-12 max-w-3xl text-lg leading-8 text-gray-400 md:text-xl"
+          className="mx-auto mb-12 max-w-3xl text-lg leading-8 text-white/78 md:text-xl"
         >
           We build intelligent, scalable, and future-ready digital solutions for modern
           businesses across industries.
@@ -62,12 +62,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
-          className="mt-20 border-t border-gray-800 pt-16"
+          className="mt-20 border-t border-white/15 pt-16"
         >
-          <p className="text-gray-500 text-sm mb-6">Trusted by growing businesses worldwide</p>
+          <p className="mb-6 text-sm text-white/60">Trusted by growing businesses worldwide</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50">
             {['TechCorp', 'InnovateLab', 'FutureSys', 'DataDrive', 'SmartScale'].map((company, i) => (
-              <span key={i} className="text-xl md:text-2xl font-bold text-gray-400">
+              <span key={i} className="text-xl font-bold text-white/70 md:text-2xl">
                 {company}
               </span>
             ))}
@@ -81,11 +81,11 @@ export default function Hero() {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
       >
-        <div className="w-6 h-10 rounded-full border-2 border-[#FFD700]/50 flex justify-center pt-2">
+        <div className="flex w-6 justify-center rounded-full border-2 border-[#FFF44F]/50 pt-2 h-10">
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1.5 h-1.5 bg-[#FFD700] rounded-full"
+            className="h-1.5 w-1.5 rounded-full bg-[#FFF44F]"
           />
         </div>
       </motion.div>

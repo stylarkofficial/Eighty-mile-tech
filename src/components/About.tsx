@@ -10,7 +10,7 @@ export default function About() {
 
   return (
     <section id="about" className="section-padding relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-[#FFD700]/5 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 h-1/2 w-1/2 rounded-full bg-gradient-to-bl from-[#FFF44F]/8 to-transparent blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -39,17 +39,17 @@ export default function About() {
             <h3 className="mb-6 text-2xl font-semibold md:text-3xl">
               A product studio for ambitious businesses ready to move with clarity.
             </h3>
-            <p className="mb-6 max-w-2xl text-base leading-8 text-gray-400 md:text-lg">
+            <p className="mb-6 max-w-2xl text-base leading-8 text-white/78 md:text-lg">
               We bring strategy, interface design, and engineering into one execution flow so your
               website and digital systems feel intentional at every touchpoint.
             </p>
-            <p className="mb-8 max-w-2xl text-base leading-8 text-gray-400 md:text-lg">
+            <p className="mb-8 max-w-2xl text-base leading-8 text-white/78 md:text-lg">
               From AI-powered workflows to immersive products and enterprise platforms, we help
               brands modernize how they present, operate, and scale.
             </p>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#FFD700] transition-all duration-300 hover:gap-3"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#FFF44F] transition-all duration-300 hover:gap-3"
             >
               Explore Capabilities
               <ArrowRight className="h-4 w-4" />
@@ -63,12 +63,12 @@ export default function About() {
             className="relative lg:pl-6"
           >
             <div className="glass rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
-              <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#FFD700]/60 to-transparent" />
-              <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#FFD700]/10 blur-3xl" />
+              <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#FFF44F]/60 to-transparent" />
+              <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#FFF44F]/10 blur-3xl" />
 
               <div className="relative z-10 space-y-8">
                 <div>
-                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#FFD700]">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#FFF44F]">
                     What We Build
                   </p>
                   <h4 className="text-2xl font-semibold text-white">
@@ -84,7 +84,7 @@ export default function About() {
                   ].map((item) => (
                     <div
                       key={item}
-                      className="rounded-2xl border border-white/8 bg-white/3 p-5 text-gray-300"
+                      className="rounded-2xl border border-[#FFF44F]/16 bg-white/[0.03] p-5 text-white/82"
                     >
                       {item}
                     </div>

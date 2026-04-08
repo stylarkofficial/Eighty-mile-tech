@@ -18,14 +18,14 @@ export default function CTA() {
           className="relative"
         >
           <div className="glass rounded-3xl p-8 md:p-16 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-[#FFD700]/20 to-transparent rounded-full blur-3xl" />
-            <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-[#FFD700]/20 to-transparent rounded-full blur-3xl" />
+            <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-gradient-to-br from-[#FFF44F]/20 to-transparent blur-3xl" />
+            <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-gradient-to-tl from-[#FFF44F]/20 to-transparent blur-3xl" />
 
             <div
               className="absolute inset-0 opacity-5"
               style={{
                 backgroundImage:
-                  'linear-gradient(#FFD700 1px, transparent 1px), linear-gradient(90deg, #FFD700 1px, transparent 1px)',
+                  'linear-gradient(#FFF44F 1px, transparent 1px), linear-gradient(90deg, #FFF44F 1px, transparent 1px)',
                 backgroundSize: '30px 30px',
               }}
             />
@@ -36,8 +36,8 @@ export default function CTA() {
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#FFD700]/10 border border-[#FFD700]/30 text-sm text-[#FFD700] font-medium mb-6">
-                  <span className="w-2 h-2 bg-[#FFD700] rounded-full animate-pulse" />
+                <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#FFF44F]/30 bg-[#FFF44F]/10 px-4 py-2 text-sm font-medium text-[#FFF44F]">
+                  <span className="h-2 w-2 rounded-full bg-[#FFF44F] animate-pulse" />
                   Limited consultation slots available this month
                 </span>
               </motion.div>
@@ -49,7 +49,7 @@ export default function CTA() {
                 Your Business?
               </h2>
 
-              <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-8">
+              <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-white/78 md:text-xl">
                 Build a cleaner digital presence and a stronger operating system for your business.
               </p>
 
@@ -66,8 +66,8 @@ export default function CTA() {
               </div>
 
               <div className="mt-12 flex flex-wrap justify-center items-center gap-8">
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-white/78">
+                  <svg className="h-5 w-5 text-[#FFF44F]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -76,8 +76,8 @@ export default function CTA() {
                   </svg>
                   <span className="text-sm">Free consultation</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-white/78">
+                  <svg className="h-5 w-5 text-[#FFF44F]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -86,8 +86,8 @@ export default function CTA() {
                   </svg>
                   <span className="text-sm">No obligation</span>
                 </div>
-                <div className="flex items-center gap-2 text-gray-400">
-                  <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-white/78">
+                  <svg className="h-5 w-5 text-[#FFF44F]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"

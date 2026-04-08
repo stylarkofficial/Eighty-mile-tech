@@ -37,14 +37,14 @@ export default function Navigation() {
       >
         <div className="content-shell flex items-center justify-between gap-6">
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#FFD700] to-[#FFC107]">
-              <Zap className="w-6 h-6 text-[#0A0A0A]" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#FFF44F]">
+              <Zap className="w-6 h-6 text-[#000000]" />
             </div>
             <div>
               <span className="block text-lg font-semibold tracking-tight gradient-text">
                 Eighty Mile Tech
               </span>
-              <span className="hidden text-[11px] uppercase tracking-[0.26em] text-gray-500 md:block">
+              <span className="hidden text-[11px] uppercase tracking-[0.26em] text-white/55 md:block">
                 Build the next move
               </span>
             </div>
@@ -55,7 +55,7 @@ export default function Navigation() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-gray-300 transition-colors duration-300 hover:text-[#FFD700]"
+                className="text-sm font-medium text-white/80 transition-colors duration-300 hover:text-[#FFF44F]"
               >
                 {link.name}
               </a>
@@ -87,7 +87,7 @@ export default function Navigation() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-medium py-2 text-gray-300 transition-colors duration-300 hover:text-[#FFD700]"
+                  className="py-2 text-lg font-medium text-white/80 transition-colors duration-300 hover:text-[#FFF44F]"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

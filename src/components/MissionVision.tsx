@@ -38,7 +38,7 @@ export default function MissionVision() {
   return (
     <section id="vision" className="section-padding relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="absolute left-1/2 top-12 h-64 w-64 -translate-x-1/2 rounded-full bg-[#FFD700]/6 blur-3xl" />
+      <div className="absolute left-1/2 top-12 h-64 w-64 -translate-x-1/2 rounded-full bg-[#FFF44F]/8 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -68,10 +68,10 @@ export default function MissionVision() {
               className="glass rounded-[2rem] p-8 md:p-10"
             >
               <div className="mb-8 flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#FFD700] to-[#FFC107]">
-                  <pillar.icon className="h-7 w-7 text-[#0A0A0A]" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#FFF44F]">
+                  <pillar.icon className="h-7 w-7 text-[#000000]" />
                 </div>
-                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#FFD700]">
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#FFF44F]">
                   {pillar.eyebrow}
                 </p>
               </div>
@@ -80,14 +80,14 @@ export default function MissionVision() {
                 {pillar.title}
               </h3>
 
-              <p className="mb-8 max-w-xl text-base leading-8 text-gray-400 md:text-lg">
+              <p className="mb-8 max-w-xl text-base leading-8 text-white/78 md:text-lg">
                 {pillar.description}
               </p>
 
               <ul className="space-y-4">
                 {pillar.points.map((point) => (
-                  <li key={point} className="flex items-start gap-3 text-gray-200">
-                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#FFD700]" />
+                  <li key={point} className="flex items-start gap-3 text-white/86">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#FFF44F]" />
                     <span className="leading-7">{point}</span>
                   </li>
                 ))}
