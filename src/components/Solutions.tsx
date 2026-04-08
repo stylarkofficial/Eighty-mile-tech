@@ -52,7 +52,7 @@ export default function Solutions() {
   });
 
   return (
-    <section id="solutions" className="section-padding bg-[#000000]">
+    <section id="solutions" className="section-padding bg-gradient-to-b from-[#687078] via-[#5A6168] to-[#727A82]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -113,7 +113,7 @@ export default function Solutions() {
                     alt={solution.title}
                     className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#5A6168] via-transparent to-transparent" />
                   <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-black/40 backdrop-blur-sm">
                     <solution.icon className="w-7 h-7 text-[#FFF44F]" />
                   </div>

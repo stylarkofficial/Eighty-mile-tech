@@ -21,7 +21,7 @@ const SectionLoader = () => (
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#000000] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#5A6168] text-white overflow-x-hidden">
       <Navigation />
       <main>
         <Hero />

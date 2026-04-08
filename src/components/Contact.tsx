@@ -115,7 +115,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="section-padding bg-[#000000]"
+      className="section-padding bg-gradient-to-b from-[#666D75] via-[#5A6168] to-[#6F767E]"
     >
       <div className="content-shell" ref={ref}>
         <motion.div

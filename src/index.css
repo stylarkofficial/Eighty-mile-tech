@@ -3,10 +3,10 @@
 @theme {
   --color-primary: #FFF44F;
   --color-primary-dark: #FFF44F;
-  --color-dark: #000000;
-  --color-dark-grey: #000000;
-  --color-grey: #000000;
-  --color-light-grey: #FFFFFF;
+  --color-dark: #5a6168;
+  --color-dark-grey: #474d54;
+  --color-grey: #3a4046;
+  --color-light-grey: #7b8289;
   --font-family-sans: 'Inter', sans-serif;
 }
 
@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #000000;
+  background-color: #5a6168;
   color: #ffffff;
   overflow-x: hidden;
   line-height: 1.5;
@@ -39,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #5a6168;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,14 +52,14 @@ body {
 }
 
 .glass {
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(31, 31, 31, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 244, 79, 0.18);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(10, 10, 10, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 244, 79, 0.18);
@@ -86,7 +86,7 @@ body {
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, #000000, #000000);
+  background: linear-gradient(135deg, #474d54, #5a6168);
   border-radius: 16px;
 }
 
