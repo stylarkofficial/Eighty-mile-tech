@@ -3,10 +3,10 @@
 @theme {
   --color-primary: #FFD700;
   --color-primary-dark: #FFC107;
-  --color-dark: #0A0A0A;
-  --color-dark-grey: #1F1F1F;
-  --color-grey: #2A2A2A;
-  --color-light-grey: #3A3A3A;
+  --color-dark: #5a6168;
+  --color-dark-grey: #474d54;
+  --color-grey: #3a4046;
+  --color-light-grey: #7b8289;
   --font-family-sans: 'Inter', sans-serif;
 }
 
@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #0A0A0A;
+  background-color: #5a6168;
   color: #ffffff;
   overflow-x: hidden;
   line-height: 1.5;
@@ -39,7 +39,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #5a6168;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -86,7 +86,7 @@ body {
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, #1F1F1F, #0A0A0A);
+  background: linear-gradient(135deg, #474d54, #5a6168);
   border-radius: 16px;
 }
 

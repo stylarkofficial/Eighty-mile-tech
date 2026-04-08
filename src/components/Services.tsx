@@ -54,7 +54,7 @@ export default function Services() {
   });
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-b from-[#0A0A0A] via-[#0F0F0F] to-[#0A0A0A]">
+    <section id="services" className="section-padding bg-gradient-to-b from-[#697179] via-[#5A6168] to-[#737B83]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

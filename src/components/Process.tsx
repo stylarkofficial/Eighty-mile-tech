@@ -37,7 +37,7 @@ export default function Process() {
   });
 
   return (
-    <section id="process" className="section-padding bg-gradient-to-b from-[#0A0A0A] via-[#0F0F0F] to-[#0A0A0A]">
+    <section id="process" className="section-padding bg-gradient-to-b from-[#687078] via-[#5A6168] to-[#707880]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

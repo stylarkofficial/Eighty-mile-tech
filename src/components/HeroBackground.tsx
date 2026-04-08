@@ -117,8 +117,8 @@ export default function HeroBackground() {
       />
       
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0A0A0A] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/60 via-transparent to-[#0A0A0A]/60 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#5A6168] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#5A6168]/55 via-transparent to-[#5A6168]/55 pointer-events-none" />
     </div>
   );
 }
