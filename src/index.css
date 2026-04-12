@@ -3,6 +3,8 @@
 
 @theme {
   --color-primary: #d4b26a;
+  --color-accent-yellow: #ffc000;
+  --color-accent-orange: #ff9818;
   --color-primary-dark: #1f2937;
   --color-dark: #20242c;
   --color-dark-grey: #5d6574;
@@ -26,7 +28,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 18% 12%, rgba(212, 178, 106, 0.18), transparent 24%),
+    radial-gradient(circle at 18% 12%, rgba(255, 192, 0, 0.14), transparent 22%),
+    radial-gradient(circle at 72% 12%, rgba(255, 152, 24, 0.08), transparent 18%),
     radial-gradient(circle at 82% 18%, rgba(129, 140, 160, 0.08), transparent 22%),
     linear-gradient(180deg, #ffffff 0%, #fbfaf7 44%, #f3f1ec 100%);
   color: #20242c;
@@ -52,7 +55,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffc100, #323f52);
+  background: linear-gradient(180deg, #ffc000, #ff9818);
 }
 
 .glass {
@@ -64,18 +67,18 @@ a {
 }
 
 .glass-dark {
-  border: 1px solid rgba(212, 178, 106, 0.18);
+  border: 1px solid rgba(255, 192, 0, 0.18);
   background: rgba(248, 246, 241, 0.95);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
 }
 
 .glow {
-  box-shadow: 0 0 0 10px rgba(255, 252, 247, 0.95), 0 0 30px rgba(212, 178, 106, 0.18);
+  box-shadow: 0 0 0 10px rgba(255, 252, 247, 0.95), 0 0 30px rgba(255, 192, 0, 0.16);
 }
 
 .glow-text {
-  text-shadow: 0 10px 40px rgba(212, 178, 106, 0.18);
+  text-shadow: 0 10px 40px rgba(255, 152, 24, 0.16);
 }
 
 .glow-sm {
@@ -83,7 +86,7 @@ a {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #20242c 0%, #495468 38%, #d4b26a 100%);
+  background: linear-gradient(135deg, #20242c 0%, #495468 38%, #ffc000 78%, #ff9818 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,14 +104,14 @@ a {
   inset: -1px;
   z-index: -1;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(212, 178, 106, 0.42), rgba(255, 255, 255, 0.08));
+  background: linear-gradient(135deg, rgba(255, 192, 0, 0.32), rgba(255, 152, 24, 0.12), rgba(255, 255, 255, 0.08));
 }
 
 .btn-primary {
-  border: 1px solid rgba(212, 178, 106, 0.35);
+  border: 1px solid rgba(255, 152, 24, 0.28);
   cursor: pointer;
   border-radius: 999px;
-  background: linear-gradient(135deg, #eee6d1 0%, #d4b26a 100%);
+  background: linear-gradient(135deg, #fff1c7 0%, #ffc000 58%, #ff9818 100%);
   color: #0c0d10;
   padding: 14px 30px;
   font-weight: 600;
@@ -140,7 +143,7 @@ a {
 
 .btn-secondary:hover {
   transform: translateY(-2px);
-  border-color: rgba(212, 178, 106, 0.5);
+  border-color: rgba(255, 152, 24, 0.36);
   box-shadow: 0 18px 40px rgba(38, 45, 56, 0.12);
 }
 
@@ -170,7 +173,7 @@ a {
 .section-kicker {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #d4b26a;
+  color: #ff9818;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.32em;
@@ -227,7 +230,8 @@ a {
 
 .theme-soft {
   background:
-    radial-gradient(circle at top, rgba(212, 178, 106, 0.14), transparent 30%),
+    radial-gradient(circle at top, rgba(255, 192, 0, 0.13), transparent 28%),
+    radial-gradient(circle at 84% 12%, rgba(255, 152, 24, 0.08), transparent 18%),
     linear-gradient(180deg, #fffdfa 0%, #f5f2eb 100%);
 }
 
@@ -249,7 +253,7 @@ a {
 
 .metal-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(212, 178, 106, 0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 192, 0, 0.7), rgba(255, 152, 24, 0.55), transparent);
 }
 
 .serif-display {

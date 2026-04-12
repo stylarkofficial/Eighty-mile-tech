@@ -14,9 +14,9 @@ export default function HeroBackground({ activeIndex }: HeroBackgroundProps) {
         transition={{ duration: 1, ease: 'easeOut' }}
         className="absolute inset-0"
       >
-        <div className="absolute -left-[10%] top-[10%] h-[24rem] w-[24rem] rounded-full bg-[#d4b26a]/12 blur-[120px]" />
+        <div className="absolute -left-[10%] top-[10%] h-[24rem] w-[24rem] rounded-full bg-[#ffc000]/12 blur-[120px]" />
         <div className="absolute right-[6%] top-[12%] h-[22rem] w-[22rem] rounded-full bg-white/55 blur-[120px]" />
-        <div className="absolute bottom-[-6%] left-[35%] h-[18rem] w-[18rem] rounded-full bg-[#e9e2d1]/80 blur-[120px]" />
+        <div className="absolute bottom-[-6%] left-[35%] h-[18rem] w-[18rem] rounded-full bg-[#ffd7a2]/50 blur-[120px]" />
       </motion.div>
 
       <div className="absolute inset-y-0 left-[7%] w-px bg-gradient-to-b from-transparent via-[#20242c]/10 to-transparent" />
