@@ -37,9 +37,9 @@ export default function Industries() {
   });
 
   return (
-    <section id="industries" className="section-padding relative overflow-hidden bg-[#f8fafc]">
-      <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#dbeafe]/70 blur-3xl" />
-      <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-[#fde68a]/40 blur-3xl" />
+    <section id="industries" className="section-padding relative overflow-hidden bg-[#f8f6f1]">
+      <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#d4b26a]/10 blur-3xl" />
+      <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-white/6 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -50,8 +50,8 @@ export default function Industries() {
         >
           <span className="section-kicker">Industries We Serve</span>
           <h2 className="section-title">
-            Solutions for
-            <span className="gradient-text"> Every Industry</span>
+            Built to translate across
+            <span className="gradient-text"> every operating environment.</span>
           </h2>
           <p className="section-copy">
             We adapt immersive technology, automation, platforms, and systems thinking to match
@@ -68,19 +68,19 @@ export default function Industries() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group"
             >
-              <div className="relative h-full cursor-pointer overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_18px_50px_rgba(15,23,42,0.07)] transition-all duration-300 group-hover:-translate-y-2">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#eff6ff]/0 to-transparent transition-all duration-300 group-hover:from-[#eff6ff]" />
+              <div className="theme-card relative h-full cursor-pointer overflow-hidden rounded-[1.5rem] p-6 transition-all duration-300 group-hover:-translate-y-2">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#d4b26a]/0 to-transparent transition-all duration-300 group-hover:from-[#d4b26a]/8" />
 
                 <div className="relative z-10">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 transition-all duration-300 group-hover:bg-[#1d4ed8]">
-                    <industry.icon className="h-6 w-6 text-white" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white transition-all duration-300 group-hover:border-[#d4b26a]/30">
+                    <industry.icon className="h-6 w-6 text-[#d4b26a]" />
                   </div>
 
-                  <h3 className="mb-3 font-semibold text-slate-950 transition-colors duration-300 group-hover:text-[#1d4ed8]">
+                  <h3 className="serif-display mb-3 text-3xl font-semibold text-[#20242c] transition-colors duration-300 group-hover:text-[#d4b26a]">
                     {industry.name}
                   </h3>
 
-                  <p className="text-sm leading-7 text-slate-600">{industry.description}</p>
+                  <p className="text-sm leading-7 text-[#5d6574]">{industry.description}</p>
                 </div>
               </div>
             </motion.div>

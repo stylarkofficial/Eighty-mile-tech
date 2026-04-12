@@ -38,30 +38,30 @@ export default function Navigation() {
         <div
           className={`content-shell flex items-center justify-between gap-6 rounded-full transition-all duration-300 ${
             isScrolled
-              ? 'border border-white/80 bg-white/80 py-3 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur-xl'
+              ? 'border border-[#1f2937]/8 bg-white/72 py-3 shadow-[0_20px_50px_rgba(38,45,56,0.08)] backdrop-blur-xl'
               : 'py-2'
           }`}
         >
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-[#0f172a] to-[#1d4ed8] shadow-[0_12px_30px_rgba(29,78,216,0.25)]">
-              <Sparkles className="w-5 h-5 text-white" />
+            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#1f2937]/10 bg-white/70 shadow-[0_12px_30px_rgba(38,45,56,0.08)]">
+              <Sparkles className="h-5 w-5 text-[#d4b26a]" />
             </div>
             <div>
-              <span className="block text-lg font-semibold tracking-tight text-slate-950">
+              <span className="serif-display block text-2xl font-semibold tracking-tight text-[#20242c]">
                 Eighty Miles
               </span>
-              <span className="hidden text-[11px] uppercase tracking-[0.26em] text-slate-500 md:block">
-                Interactive Tech Systems
+              <span className="hidden text-[11px] uppercase tracking-[0.3em] text-[#7a7f8b] md:block">
+                Precision Digital Systems
               </span>
             </div>
           </a>
 
-          <div className="hidden xl:flex items-center gap-8 rounded-full border border-slate-200 bg-white/80 px-6 py-3 shadow-[0_10px_40px_rgba(15,23,42,0.06)]">
+          <div className="hidden xl:flex items-center gap-8 rounded-full border border-[#1f2937]/8 bg-white/65 px-6 py-3 backdrop-blur-xl">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 transition-colors duration-300 hover:text-slate-950"
+                className="text-sm font-medium text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
               >
                 {link.name}
               </a>
@@ -70,12 +70,12 @@ export default function Navigation() {
 
           <div className="hidden lg:flex items-center gap-4">
             <a href="#contact" className="btn-primary text-sm">
-              Start a Conversation
+              Begin a Project
             </a>
           </div>
 
           <button
-            className="lg:hidden rounded-full border border-slate-200 bg-white/80 p-2 text-slate-900 shadow-[0_10px_30px_rgba(15,23,42,0.08)]"
+            className="lg:hidden rounded-full border border-[#1f2937]/10 bg-white/70 p-2 text-[#20242c] shadow-[0_10px_30px_rgba(38,45,56,0.08)]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -89,14 +89,14 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-20 left-4 right-4 z-40 rounded-[2rem] border border-slate-200 bg-white/95 shadow-[0_30px_80px_rgba(15,23,42,0.12)] backdrop-blur-xl lg:hidden"
+            className="fixed top-20 left-4 right-4 z-40 rounded-[2rem] border border-[#1f2937]/8 bg-white/92 shadow-[0_30px_80px_rgba(38,45,56,0.12)] backdrop-blur-xl lg:hidden"
           >
             <div className="content-shell flex flex-col gap-4 py-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="py-2 text-lg font-medium text-slate-700 transition-colors duration-300 hover:text-slate-950"
+                  className="py-2 text-lg font-medium text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

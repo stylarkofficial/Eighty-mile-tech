@@ -9,9 +9,9 @@ export default function About() {
   });
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden">
-      <div className="absolute -top-16 right-0 h-80 w-80 rounded-full bg-[#bfdbfe]/40 blur-3xl" />
-      <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-[#fde68a]/40 blur-3xl" />
+    <section id="about" className="section-padding theme-grid relative overflow-hidden">
+      <div className="absolute -top-16 right-0 h-80 w-80 rounded-full bg-[#d4b26a]/12 blur-3xl" />
+      <div className="absolute bottom-0 left-0 h-72 w-72 rounded-full bg-white/6 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -22,12 +22,12 @@ export default function About() {
         >
           <span className="section-kicker">About Us</span>
           <h2 className="section-title">
-            Pioneering the Future of
-            <span className="gradient-text"> Interactive and Immersive Innovation</span>
+            We combine strategy, engineering,
+            <span className="gradient-text"> and visual restraint.</span>
           </h2>
           <p className="section-copy">
-            We blend strategy, engineering, immersive experiences, and intelligent systems to help
-            ambitious businesses build a stronger digital edge.
+            The goal is not more interface. The goal is a clearer, sharper, more convincing digital
+            presence that communicates confidence before a word is read.
           </p>
         </motion.div>
 
@@ -37,20 +37,21 @@ export default function About() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="mb-6 text-2xl font-semibold md:text-3xl">
-              Your tech partner for businesses ready to move with clarity and momentum.
+            <h3 className="serif-display mb-6 text-3xl font-semibold text-[#20242c] md:text-5xl">
+              Your technology partner when presentation and infrastructure both need to look exact.
             </h3>
-            <p className="mb-6 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+            <p className="mb-6 max-w-2xl text-base leading-8 text-[#5d6574] md:text-lg">
               We bring strategy, interface design, and engineering into one execution flow so your
-              website, platforms, and digital systems feel intentional at every touchpoint.
+              website, platforms, and digital systems feel deliberate at every touchpoint.
             </p>
-            <p className="mb-8 max-w-2xl text-base leading-8 text-slate-600 md:text-lg">
+            <p className="mb-8 max-w-2xl text-base leading-8 text-[#5d6574] md:text-lg">
               From AI-powered workflows to immersive products and enterprise platforms, we help
-              brands modernize how they present, operate, and scale across markets.
+              brands modernize how they present, operate, and scale without falling into generic
+              agency visuals.
             </p>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#1d4ed8] transition-all duration-300 hover:gap-3"
+              className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.22em] text-[#d4b26a] transition-all duration-300 hover:gap-3"
             >
               Explore Capabilities
               <ArrowRight className="h-4 w-4" />
@@ -63,17 +64,17 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative lg:pl-6"
           >
-            <div className="glass rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
-              <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#1d4ed8]/40 to-transparent" />
-              <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#bfdbfe]/70 blur-3xl" />
+            <div className="theme-panel rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
+              <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#d4b26a]/60 to-transparent" />
+              <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#d4b26a]/18 blur-3xl" />
 
               <div className="relative z-10 space-y-8">
                 <div>
-                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#1d4ed8]">
+                  <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#d4b26a]">
                     What We Build
                   </p>
-                  <h4 className="text-2xl font-semibold text-slate-950">
-                    Innovation with measurable business depth.
+                  <h4 className="serif-display text-3xl font-semibold text-[#20242c]">
+                    Technology with composure and measurable depth.
                   </h4>
                 </div>
 
@@ -94,10 +95,10 @@ export default function About() {
                   ].map((item) => (
                     <div
                       key={item.text}
-                      className="rounded-2xl border border-slate-200 bg-white/80 p-5 text-slate-700 shadow-[0_16px_40px_rgba(15,23,42,0.06)]"
+                      className="rounded-2xl border border-[#1f2937]/8 bg-white/74 p-5 text-[#5d6574] shadow-[0_16px_40px_rgba(38,45,56,0.08)]"
                     >
                       <div className="flex items-start gap-3">
-                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 text-white">
+                        <div className="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white text-[#d4b26a]">
                           <item.icon className="h-5 w-5" />
                         </div>
                         <p className="leading-7">{item.text}</p>

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Bot, Headphones, BarChart3, Database, Shield, ArrowRight } from 'lucide-react';
-import automationImg from '../assets/generated/solution-automation.png';
-import vrTrainingImg from '../assets/generated/solution-vr-training.png';
-import analyticsImg from '../assets/generated/solution-analytics.png';
-import enterprisePlatformImg from '../assets/generated/solution-enterprise-platform.png';
-import cybersecurityImg from '../assets/generated/solution-cybersecurity.png';
+import automationImg from '../../solution images/ai powered business automation.png';
+import vrTrainingImg from '../../solution images/vr.png';
+import analyticsImg from '../../solution images/predictive analysis.png';
+import enterprisePlatformImg from '../../solution images/smart enterprise.png';
+import cybersecurityImg from '../../solution images/cyber security.png';
 
 const solutions = [
   {
@@ -52,7 +52,7 @@ export default function Solutions() {
   });
 
   return (
-    <section id="solutions" className="section-padding bg-white">
+    <section id="solutions" className="section-padding theme-grid bg-[#fffdfa]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -62,8 +62,8 @@ export default function Solutions() {
         >
           <span className="section-kicker">Solutions in Action</span>
           <h2 className="section-title">
-            Real-World
-            <span className="gradient-text"> Applications</span>
+            Concept, interface,
+            <span className="gradient-text"> and implementation in one system.</span>
           </h2>
           <p className="section-copy">
             See how our solution stack translates into practical business outcomes across
@@ -81,24 +81,24 @@ export default function Solutions() {
               className={`flex flex-col items-center gap-8 lg:gap-12 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
             >
               <div className="flex-1">
-                <div className="h-full rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-950">
-                    <solution.icon className="w-7 h-7 text-white" />
+                <div className="theme-panel h-full rounded-[2rem] p-8 md:p-10">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white">
+                    <solution.icon className="w-7 h-7 text-[#d4b26a]" />
                   </div>
 
-                  <h3 className="mb-4 text-2xl font-semibold text-slate-950">{solution.title}</h3>
+                  <h3 className="serif-display mb-4 text-4xl font-semibold text-[#20242c]">{solution.title}</h3>
 
-                  <p className="mb-6 leading-8 text-slate-600">{solution.description}</p>
+                  <p className="mb-6 leading-8 text-[#5d6574]">{solution.description}</p>
 
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="rounded-full border border-[#bfdbfe] bg-[#eff6ff] px-4 py-2">
-                      <span className="font-semibold text-[#1d4ed8]">{solution.stats}</span>
+                    <div className="rounded-full border border-[#d4b26a]/30 bg-white/[0.03] px-4 py-2">
+                      <span className="font-semibold text-[#d4b26a]">{solution.stats}</span>
                     </div>
                   </div>
 
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 font-medium text-[#1d4ed8] transition-all duration-300 hover:gap-3"
+                    className="inline-flex items-center gap-2 font-medium uppercase tracking-[0.16em] text-[#d4b26a] transition-all duration-300 hover:gap-3"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4" />
@@ -107,20 +107,20 @@ export default function Solutions() {
               </div>
 
               <div className="flex-1">
-                <div className="group relative overflow-hidden rounded-[2rem] border border-slate-200 shadow-[0_24px_70px_rgba(15,23,42,0.08)]">
+                <div className="group relative overflow-hidden rounded-[2rem] border border-[#1f2937]/8 shadow-[0_24px_70px_rgba(38,45,56,0.1)]">
                   <img
                     src={solution.image}
                     alt={solution.title}
                     className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a]/75 via-transparent to-transparent" />
-                  <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent" />
+                  <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-white/50 bg-white/25 backdrop-blur-md">
                     <solution.icon className="w-7 h-7 text-white" />
                   </div>
                   <div className="absolute bottom-6 left-6 right-6">
-                    <p className="text-xl font-semibold text-white">{solution.title}</p>
+                    <p className="serif-display text-3xl font-semibold text-white">{solution.title}</p>
                   </div>
-                  <div className="absolute inset-0 rounded-[2rem] border-2 border-white/10 transition-colors duration-300 group-hover:border-white/30" />
+                  <div className="absolute inset-0 rounded-[2rem] border-2 border-white/20 transition-colors duration-300 group-hover:border-[#d4b26a]/30" />
                 </div>
               </div>
             </motion.div>

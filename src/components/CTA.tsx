@@ -9,7 +9,7 @@ export default function CTA() {
   });
 
   return (
-    <section className="section-padding relative overflow-hidden bg-[#f8fafc]">
+    <section className="section-padding relative overflow-hidden bg-[#fffdfa]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -17,15 +17,15 @@ export default function CTA() {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-[0_24px_80px_rgba(15,23,42,0.08)] md:p-16">
-            <div className="absolute top-0 left-0 h-64 w-64 rounded-full bg-gradient-to-br from-[#bfdbfe]/60 to-transparent blur-3xl" />
-            <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-gradient-to-tl from-[#fde68a]/50 to-transparent blur-3xl" />
+          <div className="theme-panel relative overflow-hidden rounded-3xl p-8 text-center md:p-16">
+            <div className="absolute top-0 left-0 h-64 w-64 rounded-full bg-gradient-to-br from-[#d4b26a]/18 to-transparent blur-3xl" />
+            <div className="absolute bottom-0 right-0 h-64 w-64 rounded-full bg-gradient-to-tl from-white/10 to-transparent blur-3xl" />
 
             <div
               className="absolute inset-0 opacity-5"
               style={{
                 backgroundImage:
-                  'linear-gradient(rgba(148,163,184,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.35) 1px, transparent 1px)',
+                  'linear-gradient(rgba(255,255,255,0.25) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 1px)',
                 backgroundSize: '30px 30px',
               }}
             />
@@ -36,21 +36,22 @@ export default function CTA() {
                 animate={inView ? { scale: 1, opacity: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-                <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bfdbfe] bg-[#eff6ff] px-4 py-2 text-sm font-medium text-[#1d4ed8]">
-                  <span className="h-2 w-2 rounded-full bg-[#1d4ed8] animate-pulse" />
+                <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d4b26a]/30 bg-white/[0.04] px-4 py-2 text-sm font-medium uppercase tracking-[0.2em] text-[#d4b26a]">
+                  <span className="h-2 w-2 rounded-full bg-[#d4b26a] animate-pulse" />
                   Limited consultation slots available this month
                 </span>
               </motion.div>
 
-              <h2 className="mb-6 text-3xl font-bold text-slate-950 md:text-5xl lg:text-6xl">
-                Ready to
-                <span className="gradient-text"> Transform</span>
+              <h2 className="serif-display mb-6 text-4xl font-semibold leading-[0.95] text-[#20242c] md:text-6xl lg:text-7xl">
+                Ready to present your brand
+                <span className="gradient-text"> with more gravity?</span>
                 <br />
-                Your Business?
+                Let&apos;s build the next version.
               </h2>
 
-              <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-                Build a cleaner digital presence and a stronger operating system for your business.
+              <p className="mx-auto mb-10 max-w-2xl text-lg leading-8 text-[#5d6574] md:text-xl">
+                We can redesign the experience, modernize the systems behind it, and make the
+                entire business feel more advanced in motion.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -66,8 +67,8 @@ export default function CTA() {
               </div>
 
               <div className="mt-12 flex flex-wrap justify-center items-center gap-8">
-                <div className="flex items-center gap-2 text-slate-600">
-                  <svg className="h-5 w-5 text-[#1d4ed8]" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-[#5d6574]">
+                  <svg className="h-5 w-5 text-[#d4b26a]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -76,8 +77,8 @@ export default function CTA() {
                   </svg>
                   <span className="text-sm">Free consultation</span>
                 </div>
-                <div className="flex items-center gap-2 text-slate-600">
-                  <svg className="h-5 w-5 text-[#1d4ed8]" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-[#5d6574]">
+                  <svg className="h-5 w-5 text-[#d4b26a]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -86,8 +87,8 @@ export default function CTA() {
                   </svg>
                   <span className="text-sm">No obligation</span>
                 </div>
-                <div className="flex items-center gap-2 text-slate-600">
-                  <svg className="h-5 w-5 text-[#1d4ed8]" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 text-[#5d6574]">
+                  <svg className="h-5 w-5 text-[#d4b26a]" fill="currentColor" viewBox="0 0 20 20">
                     <path
                       fillRule="evenodd"
                       d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"

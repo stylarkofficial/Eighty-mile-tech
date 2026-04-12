@@ -112,7 +112,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-white">
+    <section id="contact" className="section-padding bg-[#f8f6f1]">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -122,12 +122,12 @@ export default function Contact() {
         >
           <span className="section-kicker">Contact Us</span>
           <h2 className="section-title">
-            Let's Start Your
-            <span className="gradient-text"> Transformation</span>
+            Let&apos;s shape your next
+            <span className="gradient-text"> digital signature.</span>
           </h2>
           <p className="section-copy">
-            Ready to discuss your project? Tell us what you want to build and we’ll help shape the
-            right solution.
+            Ready to discuss your project? Tell us what you want to build and we&apos;ll help shape
+            the right system, experience, and visual direction.
           </p>
         </motion.div>
 
@@ -138,10 +138,13 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="order-2 lg:order-2"
           >
-            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
+            <div className="theme-panel rounded-[2rem] p-8 md:p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">
+                  <label
+                    htmlFor="name"
+                    className="mb-2 block text-sm font-medium uppercase tracking-[0.14em] text-[#d4b26a]"
+                  >
                     Full Name *
                   </label>
                   <input
@@ -151,13 +154,16 @@ export default function Contact() {
                     value={formState.name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    className="w-full rounded-2xl border border-[#1f2937]/8 bg-white px-4 py-3 text-[#20242c] transition-colors duration-300 focus:border-[#d4b26a] focus:outline-none"
                     placeholder="Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
+                  <label
+                    htmlFor="email"
+                    className="mb-2 block text-sm font-medium uppercase tracking-[0.14em] text-[#d4b26a]"
+                  >
                     Email Address *
                   </label>
                   <input
@@ -167,13 +173,16 @@ export default function Contact() {
                     value={formState.email}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    className="w-full rounded-2xl border border-[#1f2937]/8 bg-white px-4 py-3 text-[#20242c] transition-colors duration-300 focus:border-[#d4b26a] focus:outline-none"
                     placeholder="mail@gmail.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="mb-2 block text-sm font-medium text-slate-700">
+                  <label
+                    htmlFor="company"
+                    className="mb-2 block text-sm font-medium uppercase tracking-[0.14em] text-[#d4b26a]"
+                  >
                     Company Name
                   </label>
                   <input
@@ -182,13 +191,16 @@ export default function Contact() {
                     name="company"
                     value={formState.company}
                     onChange={handleChange}
-                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    className="w-full rounded-2xl border border-[#1f2937]/8 bg-white px-4 py-3 text-[#20242c] transition-colors duration-300 focus:border-[#d4b26a] focus:outline-none"
                     placeholder="Company"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-700">
+                  <label
+                    htmlFor="message"
+                    className="mb-2 block text-sm font-medium uppercase tracking-[0.14em] text-[#d4b26a]"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -198,7 +210,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full resize-none rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    className="w-full resize-none rounded-2xl border border-[#1f2937]/8 bg-white px-4 py-3 text-[#20242c] transition-colors duration-300 focus:border-[#d4b26a] focus:outline-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -206,7 +218,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-primary flex items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="btn-primary flex w-full items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {isSubmitting ? (
                     <>
@@ -230,8 +242,8 @@ export default function Contact() {
                   <div
                     className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-sm ${
                       submitState === 'error'
-                        ? 'border-red-200 bg-red-50 text-red-700'
-                        : 'border-[#bfdbfe] bg-[#eff6ff] text-[#1d4ed8]'
+                        ? 'border-red-400/30 bg-red-500/10 text-red-200'
+                        : 'border-[#d4b26a]/30 bg-[#d4b26a]/10 text-[#e3cf9c]'
                     }`}
                   >
                     {submitState === 'error' ? (
@@ -252,19 +264,19 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="order-1 space-y-8 lg:order-1"
           >
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
-              <h3 className="mb-6 text-2xl font-semibold text-slate-950">Get in Touch</h3>
+            <div className="theme-panel rounded-[2rem] p-8 md:p-10">
+              <h3 className="serif-display mb-6 text-4xl font-semibold text-[#20242c]">Get in Touch</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
-                    <Mail className="h-6 w-6 text-[#1d4ed8]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
+                    <Mail className="h-6 w-6 text-[#d4b26a]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium text-slate-950">Primary Email</p>
+                    <p className="mb-1 font-medium text-[#20242c]">Primary Email</p>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
+                      className="text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
                     >
                       {CONTACT_EMAIL}
                     </a>
@@ -272,14 +284,14 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
-                    <Mail className="h-6 w-6 text-[#1d4ed8]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
+                    <Mail className="h-6 w-6 text-[#d4b26a]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium text-slate-950">Secondary Email</p>
+                    <p className="mb-1 font-medium text-[#20242c]">Secondary Email</p>
                     <a
                       href="mailto:eightymileinfo@gmail.com"
-                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
+                      className="text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
                     >
                       eightymileinfo@gmail.com
                     </a>
@@ -287,14 +299,14 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
-                    <Phone className="h-6 w-6 text-[#1d4ed8]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
+                    <Phone className="h-6 w-6 text-[#d4b26a]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium text-slate-950">Phone</p>
+                    <p className="mb-1 font-medium text-[#20242c]">Phone</p>
                     <a
                       href="tel:+919551758115"
-                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
+                      className="text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
                     >
                       Eighty Miles: +91 9551758115
                     </a>
@@ -303,14 +315,16 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
+            <div className="theme-panel rounded-[2rem] p-8 md:p-10">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
-                  <MapPin className="h-6 w-6 text-[#1d4ed8]" />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
+                  <MapPin className="h-6 w-6 text-[#d4b26a]" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-semibold text-slate-950">Our Presence :</h3>
-                  <p className="leading-8 text-slate-600">
+                  <h3 className="serif-display mb-2 text-3xl font-semibold text-[#20242c]">
+                    Our Presence
+                  </h3>
+                  <p className="leading-8 text-[#5d6574]">
                     Chennai | Coimbatore | Bangalore | Hyderabad | UAE | UK | Germany
                   </p>
                 </div>
