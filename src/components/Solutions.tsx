@@ -52,7 +52,7 @@ export default function Solutions() {
   });
 
   return (
-    <section id="solutions" className="section-padding theme-grid bg-[#fffdfa]">
+    <section id="solutions" className="section-padding theme-grid bg-white">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logoImg from '../../logo.png';
 
 const navLinks = [
   { name: 'About', href: '#about' },
@@ -43,15 +44,17 @@ export default function Navigation() {
           }`}
         >
           <a href="#" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#1f2937]/10 bg-white/70 shadow-[0_12px_30px_rgba(38,45,56,0.08)]">
-              <Sparkles className="h-5 w-5 text-[#d4b26a]" />
-            </div>
-            <div>
-              <span className="serif-display block text-2xl font-semibold tracking-tight text-[#20242c]">
-                Eighty Miles
+            <img
+              src={logoImg}
+              alt="Eighty Mile Tech"
+              className="h-12 w-auto object-contain md:h-14"
+            />
+            <div className="text-center leading-none">
+              <span className="block text-lg font-bold text-[#20242c] md:text-xl">
+                Eighty Mile
               </span>
-              <span className="hidden text-[11px] uppercase tracking-[0.3em] text-[#7a7f8b] md:block">
-                Precision Digital Systems
+              <span className="mt-1 block text-sm font-bold uppercase tracking-[0.16em] text-[#20242c] md:text-[0.95rem]">
+                Tech
               </span>
             </div>
           </a>

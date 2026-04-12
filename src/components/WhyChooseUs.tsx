@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
   });
 
   return (
-    <section id="why-us" className="section-padding relative overflow-hidden bg-[#fffdfa]">
+    <section id="why-us" className="section-padding relative overflow-hidden bg-white">
       <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-[#d4b26a]/10 blur-3xl" />
 
       <div className="content-shell" ref={ref}>

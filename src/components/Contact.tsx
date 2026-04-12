@@ -112,7 +112,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="section-padding bg-[#f8f6f1]">
+    <section id="contact" className="section-padding bg-white">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -308,7 +308,7 @@ export default function Contact() {
                       href="tel:+919551758115"
                       className="text-[#5d6574] transition-colors duration-300 hover:text-[#20242c]"
                     >
-                      Eighty Miles: +91 9551758115
+                      Eighy Mile: +91 9551758115
                     </a>
                   </div>
                 </div>
@@ -324,9 +324,10 @@ export default function Contact() {
                   <h3 className="serif-display mb-2 text-3xl font-semibold text-[#20242c]">
                     Our Presence
                   </h3>
-                  <p className="leading-8 text-[#5d6574]">
-                    Chennai | Coimbatore | Bangalore | Hyderabad | UAE | UK | Germany
-                  </p>
+                  <div className="space-y-1 leading-8 text-[#5d6574]">
+                    <p>Chennai | Coimbatore | Bangalore | Hyderabad</p>
+                    <p>UAE | UK | Germany</p>
+                  </div>
                 </div>
               </div>
             </div>

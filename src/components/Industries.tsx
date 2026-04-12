@@ -37,7 +37,7 @@ export default function Industries() {
   });
 
   return (
-    <section id="industries" className="section-padding relative overflow-hidden bg-[#f8f6f1]">
+    <section id="industries" className="section-padding relative overflow-hidden bg-white">
       <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#d4b26a]/10 blur-3xl" />
       <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-white/6 blur-3xl" />
 

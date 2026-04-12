@@ -117,7 +117,7 @@ export default function Services() {
                   </div>
                   <div className="absolute bottom-5 left-6 right-6">
                     <span className="inline-flex rounded-full border border-white/60 bg-white/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[#5d6574] backdrop-blur-md">
-                      Eighty Miles
+                      Eighy Mile
                     </span>
                   </div>
                 </div>

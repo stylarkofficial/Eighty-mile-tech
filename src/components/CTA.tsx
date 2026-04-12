@@ -9,7 +9,7 @@ export default function CTA() {
   });
 
   return (
-    <section className="section-padding relative overflow-hidden bg-[#fffdfa]">
+    <section className="section-padding relative overflow-hidden bg-white">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
