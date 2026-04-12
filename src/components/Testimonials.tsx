@@ -5,7 +5,7 @@ import { Quote, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "NexusTech transformed our manufacturing operations with their AI automation solutions. We've seen a 45% increase in efficiency and significant cost savings.",
+    quote: "Eighty Mile Travel transformed our manufacturing operations with their AI automation solutions. We've seen a 45% increase in efficiency and significant cost savings.",
     author: 'Sarah Chen',
     role: 'CTO, TechManufacture Inc.',
     company: 'TechManufacture',

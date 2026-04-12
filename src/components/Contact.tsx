@@ -6,13 +6,12 @@ import {
   Mail,
   Phone,
   MapPin,
-  MessageCircle,
   CheckCircle,
   AlertCircle,
   Loader2,
 } from 'lucide-react';
 
-const CONTACT_EMAIL = 'hello@eightymiletech.com';
+const CONTACT_EMAIL = 'contact@eightymile.co';
 
 type SubmitState = 'idle' | 'success' | 'fallback' | 'error';
 
@@ -113,10 +112,7 @@ export default function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="section-padding bg-gradient-to-b from-[#666D75] via-[#5A6168] to-[#6F767E]"
-    >
+    <section id="contact" className="section-padding bg-white">
       <div className="content-shell" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -130,8 +126,8 @@ export default function Contact() {
             <span className="gradient-text"> Transformation</span>
           </h2>
           <p className="section-copy">
-            Ready to discuss your project? Our team is here to help you navigate your digital
-            transformation journey.
+            Ready to discuss your project? Tell us what you want to build and we’ll help shape the
+            right solution.
           </p>
         </motion.div>
 
@@ -140,11 +136,12 @@ export default function Contact() {
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="order-2 lg:order-2"
           >
-            <div className="glass rounded-[2rem] p-8 md:p-10">
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-white/82">
+                  <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">
                     Full Name *
                   </label>
                   <input
@@ -154,13 +151,13 @@ export default function Contact() {
                     value={formState.name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
-                    placeholder="Guru prasadh"
+                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    placeholder="Name"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-white/82">
+                  <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
                     Email Address *
                   </label>
                   <input
@@ -170,13 +167,13 @@ export default function Contact() {
                     value={formState.email}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
-                    placeholder="guruprasadh@gmail.com"
+                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    placeholder="mail@gmail.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="mb-2 block text-sm font-medium text-white/82">
+                  <label htmlFor="company" className="mb-2 block text-sm font-medium text-slate-700">
                     Company Name
                   </label>
                   <input
@@ -185,13 +182,13 @@ export default function Contact() {
                     name="company"
                     value={formState.company}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
-                    placeholder="Your Company Inc."
+                    className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
+                    placeholder="Company"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-white/82">
+                  <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-700">
                     Message *
                   </label>
                   <textarea
@@ -201,7 +198,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows={5}
-                    className="w-full resize-none rounded-lg border border-[#FFF44F]/18 bg-[#000000] px-4 py-3 text-white transition-colors duration-300 focus:border-[#FFF44F] focus:outline-none"
+                    className="w-full resize-none rounded-2xl border border-slate-200 bg-white px-4 py-3 text-slate-900 transition-colors duration-300 focus:border-[#1d4ed8] focus:outline-none"
                     placeholder="Tell us about your project..."
                   />
                 </div>
@@ -233,8 +230,8 @@ export default function Contact() {
                   <div
                     className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-sm ${
                       submitState === 'error'
-                        ? 'border-red-500/30 bg-red-500/10 text-red-200'
-                        : 'border-[#FFF44F]/25 bg-[#FFF44F]/10 text-[#FFF44F]'
+                        ? 'border-red-200 bg-red-50 text-red-700'
+                        : 'border-[#bfdbfe] bg-[#eff6ff] text-[#1d4ed8]'
                     }`}
                   >
                     {submitState === 'error' ? (
@@ -253,21 +250,21 @@ export default function Contact() {
             initial={{ opacity: 0, x: 40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="space-y-8"
+            className="order-1 space-y-8 lg:order-1"
           >
-            <div className="glass rounded-[2rem] p-8 md:p-10">
-              <h3 className="mb-6 text-2xl font-semibold">Get in Touch</h3>
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
+              <h3 className="mb-6 text-2xl font-semibold text-slate-950">Get in Touch</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
-                    <Mail className="h-6 w-6 text-[#FFF44F]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
+                    <Mail className="h-6 w-6 text-[#1d4ed8]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium">Email Us</p>
+                    <p className="mb-1 font-medium text-slate-950">Primary Email</p>
                     <a
                       href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-white/78 transition-colors duration-300 hover:text-[#FFF44F]"
+                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
                     >
                       {CONTACT_EMAIL}
                     </a>
@@ -275,48 +272,46 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
-                    <Phone className="h-6 w-6 text-[#FFF44F]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
+                    <Mail className="h-6 w-6 text-[#1d4ed8]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium">Call Us</p>
+                    <p className="mb-1 font-medium text-slate-950">Secondary Email</p>
                     <a
-                      href="tel:+1234567890"
-                      className="text-white/78 transition-colors duration-300 hover:text-[#FFF44F]"
+                      href="mailto:eightymileinfo@gmail.com"
+                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
                     >
-                      +1 (234) 567-890
+                      eightymileinfo@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
-                    <MapPin className="h-6 w-6 text-[#FFF44F]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
+                    <Phone className="h-6 w-6 text-[#1d4ed8]" />
                   </div>
                   <div>
-                    <p className="mb-1 font-medium">Visit Us</p>
-                    <p className="text-white/78">
-                      123 Innovation Drive
-                      <br />
-                      Tech District, San Francisco
-                      <br />
-                      CA 94105
-                    </p>
+                    <p className="mb-1 font-medium text-slate-950">Phone</p>
+                    <a
+                      href="tel:+919551758115"
+                      className="text-slate-600 transition-colors duration-300 hover:text-[#1d4ed8]"
+                    >
+                      Eighty Miles: +91 9551758115
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="glass rounded-[2rem] p-8 md:p-10">
+            <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-[0_24px_70px_rgba(15,23,42,0.08)] md:p-10">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10">
-                  <MessageCircle className="h-6 w-6 text-[#FFF44F]" />
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#eff6ff]">
+                  <MapPin className="h-6 w-6 text-[#1d4ed8]" />
                 </div>
                 <div>
-                  <h3 className="mb-2 text-xl font-semibold">Fast Response</h3>
-                  <p className="leading-8 text-white/78">
-                    Share your requirement and we will get back to you within 24 hours with a
-                    clear next step.
+                  <h3 className="mb-2 text-xl font-semibold text-slate-950">Our Presence :</h3>
+                  <p className="leading-8 text-slate-600">
+                    Chennai | Coimbatore | Bangalore | Hyderabad | UAE | UK | Germany
                   </p>
                 </div>
               </div>

@@ -7,7 +7,6 @@ const About = lazy(() => import('./components/About'));
 const Services = lazy(() => import('./components/Services'));
 const Industries = lazy(() => import('./components/Industries'));
 const Solutions = lazy(() => import('./components/Solutions'));
-const MissionVision = lazy(() => import('./components/MissionVision'));
 const WhyChooseUs = lazy(() => import('./components/WhyChooseUs'));
 const Process = lazy(() => import('./components/Process'));
 const CTA = lazy(() => import('./components/CTA'));
@@ -15,13 +14,13 @@ const Contact = lazy(() => import('./components/Contact'));
 
 const SectionLoader = () => (
   <div className="min-h-[400px] flex items-center justify-center">
-    <div className="w-12 h-12 border-4 border-[#FFF44F]/20 border-t-[#FFF44F] rounded-full animate-spin" />
+    <div className="w-12 h-12 border-4 border-[#F4C95D]/25 border-t-[#F4C95D] rounded-full animate-spin" />
   </div>
 );
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#5A6168] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#f8fafc] text-[#0f172a] overflow-x-hidden">
       <Navigation />
       <main>
         <Hero />
@@ -29,7 +28,7 @@ function App() {
           <Services />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <Industries />
+          <Process />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Solutions />
@@ -38,13 +37,10 @@ function App() {
           <About />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <MissionVision />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
           <WhyChooseUs />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <Process />
+          <Industries />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <CTA />

@@ -13,10 +13,6 @@ import {
   HardHat,
   Zap,
   Plane,
-  Film,
-  Wheat,
-  Building,
-  Radio,
 } from 'lucide-react';
 
 const industries = [
@@ -32,10 +28,6 @@ const industries = [
   { icon: HardHat, name: 'Construction', description: 'BIM visualization, safety training VR, and project management AI' },
   { icon: Zap, name: 'Energy & Utilities', description: 'Smart grid management, predictive maintenance, and sustainability analytics' },
   { icon: Plane, name: 'Travel & Hospitality', description: 'Virtual destination tours, AI concierge, and booking optimization' },
-  { icon: Film, name: 'Media & Entertainment', description: 'Immersive content creation, streaming platforms, and audience analytics' },
-  { icon: Wheat, name: 'Agriculture (AgriTech)', description: 'Precision farming, crop monitoring AI, and supply chain transparency' },
-  { icon: Building, name: 'Government & Smart Cities', description: 'Citizen services platforms, smart infrastructure, and public safety AI' },
-  { icon: Radio, name: 'Telecom', description: 'Network optimization, customer experience AI, and 5G solutions' },
 ];
 
 export default function Industries() {
@@ -45,9 +37,9 @@ export default function Industries() {
   });
 
   return (
-    <section id="industries" className="section-padding relative overflow-hidden">
-      <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
-      <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
+    <section id="industries" className="section-padding relative overflow-hidden bg-[#f8fafc]">
+      <div className="absolute top-1/4 left-0 h-96 w-96 rounded-full bg-[#dbeafe]/70 blur-3xl" />
+      <div className="absolute bottom-1/4 right-0 h-96 w-96 rounded-full bg-[#fde68a]/40 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -62,8 +54,8 @@ export default function Industries() {
             <span className="gradient-text"> Every Industry</span>
           </h2>
           <p className="section-copy">
-            Our expertise spans across diverse sectors, delivering tailored technology solutions
-            that address unique industry challenges.
+            We adapt immersive technology, automation, platforms, and systems thinking to match
+            the operating reality of each sector we work with.
           </p>
         </motion.div>
 
@@ -76,19 +68,19 @@ export default function Industries() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group"
             >
-              <div className="glass rounded-[1.5rem] p-6 h-full cursor-pointer hover:glow-sm transition-all duration-300 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#FFF44F]/0 to-transparent transition-all duration-300 group-hover:from-[#FFF44F]/10" />
+              <div className="relative h-full cursor-pointer overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-[0_18px_50px_rgba(15,23,42,0.07)] transition-all duration-300 group-hover:-translate-y-2">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#eff6ff]/0 to-transparent transition-all duration-300 group-hover:from-[#eff6ff]" />
 
                 <div className="relative z-10">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#FFF44F]/10 transition-all duration-300 group-hover:bg-[#FFF44F]">
-                    <industry.icon className="h-6 w-6 text-[#FFF44F] transition-colors duration-300 group-hover:text-[#000000]" />
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-950 transition-all duration-300 group-hover:bg-[#1d4ed8]">
+                    <industry.icon className="h-6 w-6 text-white" />
                   </div>
 
-                  <h3 className="mb-3 font-semibold transition-colors duration-300 group-hover:text-[#FFF44F]">
+                  <h3 className="mb-3 font-semibold text-slate-950 transition-colors duration-300 group-hover:text-[#1d4ed8]">
                     {industry.name}
                   </h3>
 
-                  <p className="text-sm leading-7 text-white/72">{industry.description}</p>
+                  <p className="text-sm leading-7 text-slate-600">{industry.description}</p>
                 </div>
               </div>
             </motion.div>

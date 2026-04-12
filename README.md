@@ -1,6 +1,6 @@
-# Eighty Mile Tech
+# Eighty Mile Travel
 
-Marketing site for Eighty Mile Tech, built with React, Vite, and Tailwind CSS, with a Vercel-ready contact API.
+Marketing site for Eighty Mile Travel, built with React, Vite, and Tailwind CSS, with a Vercel-ready contact API.
 
 ## Local development
 

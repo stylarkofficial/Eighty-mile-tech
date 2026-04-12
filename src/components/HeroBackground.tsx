@@ -54,7 +54,7 @@ export default function HeroBackground() {
 
           if (distance < 150) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(255, 215, 0, ${0.15 * (1 - distance / 150)})`;
+            ctx.strokeStyle = `rgba(59, 130, 246, ${0.12 * (1 - distance / 150)})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -67,7 +67,7 @@ export default function HeroBackground() {
       for (const particle of particles) {
         ctx.beginPath();
         ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 215, 0, ${particle.opacity})`;
+        ctx.fillStyle = `rgba(59, 130, 246, ${particle.opacity})`;
         ctx.fill();
 
         // Update position
@@ -102,23 +102,23 @@ export default function HeroBackground() {
         className="absolute inset-0"
         style={{ background: 'transparent' }}
       />
-      
-      {/* Animated gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 h-96 w-96 animate-pulse rounded-full bg-[#FFF44F]/12 blur-[100px]" />
-      <div className="absolute bottom-1/4 right-1/4 h-96 w-96 animate-pulse rounded-full bg-[#FFF44F]/8 blur-[100px]" style={{ animationDelay: '1s' }} />
-      
-      {/* Grid pattern */}
-      <div 
+
+      <div className="absolute left-[8%] top-[16%] h-96 w-96 animate-pulse rounded-full bg-[#bfdbfe]/50 blur-[110px]" />
+      <div
+        className="absolute bottom-[14%] right-[10%] h-96 w-96 animate-pulse rounded-full bg-[#fde68a]/35 blur-[110px]"
+        style={{ animationDelay: '1s' }}
+      />
+
+      <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(#FFF44F 1px, transparent 1px), linear-gradient(90deg, #FFF44F 1px, transparent 1px)`,
+          backgroundImage:
+            'linear-gradient(rgba(148,163,184,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,0.5) 1px, transparent 1px)',
           backgroundSize: '60px 60px',
         }}
       />
-      
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#5A6168] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#5A6168]/55 via-transparent to-[#5A6168]/55 pointer-events-none" />
+
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0)_0%,_rgba(248,250,252,0.65)_75%,_rgba(248,250,252,1)_100%)] pointer-events-none" />
     </div>
   );
 }

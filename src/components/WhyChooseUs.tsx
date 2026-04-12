@@ -42,8 +42,8 @@ export default function WhyChooseUs() {
   });
 
   return (
-    <section id="why-us" className="section-padding relative overflow-hidden">
-      <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-[#FFF44F]/8 blur-3xl" />
+    <section id="why-us" className="section-padding relative overflow-hidden bg-white">
+      <div className="absolute top-0 left-1/4 h-96 w-96 rounded-full bg-[#dbeafe]/70 blur-3xl" />
 
       <div className="content-shell" ref={ref}>
         <motion.div
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
         >
           <span className="section-kicker">Why Choose Us</span>
           <h2 className="section-title">
-            The Eighty Mile Tech
+            The Eighty Miles
             <span className="gradient-text"> Advantage</span>
           </h2>
           <p className="section-copy">
@@ -72,16 +72,16 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className="group"
             >
-              <div className="glass rounded-[1.5rem] p-7 md:p-8 h-full hover:glow-sm transition-all duration-300">
+              <div className="h-full rounded-[1.5rem] border border-slate-200 bg-white p-7 shadow-[0_20px_50px_rgba(15,23,42,0.07)] transition-all duration-300 hover:-translate-y-2 md:p-8">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-[#FFF44F]/10 transition-all duration-300 group-hover:bg-[#FFF44F]">
-                    <reason.icon className="h-6 w-6 text-[#FFF44F] transition-colors duration-300 group-hover:text-[#000000]" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-slate-950 transition-all duration-300 group-hover:bg-[#1d4ed8]">
+                    <reason.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="mb-3 text-lg font-semibold transition-colors duration-300 group-hover:text-[#FFF44F]">
+                    <h3 className="mb-3 text-lg font-semibold text-slate-950 transition-colors duration-300 group-hover:text-[#1d4ed8]">
                       {reason.title}
                     </h3>
-                    <p className="text-sm leading-7 text-white/78">{reason.description}</p>
+                    <p className="text-sm leading-7 text-slate-600">{reason.description}</p>
                   </div>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-12 grid gap-5 rounded-[2rem] border border-[#FFF44F]/18 bg-white/[0.03] p-8 md:grid-cols-2 md:p-10"
+          className="mt-12 grid gap-5 rounded-[2rem] border border-slate-200 bg-slate-50 p-8 md:grid-cols-2 md:p-10"
         >
           {[
             'Dedicated project managers for every engagement',
@@ -104,8 +104,8 @@ export default function WhyChooseUs() {
             'Continuous innovation and upgrades',
           ].map((benefit, i) => (
             <div key={i} className="flex items-center gap-3">
-              <CheckCircle2 className="h-5 w-5 shrink-0 text-[#FFF44F]" />
-              <span className="leading-7 text-white/82">{benefit}</span>
+              <CheckCircle2 className="h-5 w-5 shrink-0 text-[#1d4ed8]" />
+              <span className="leading-7 text-slate-700">{benefit}</span>
             </div>
           ))}
         </motion.div>
