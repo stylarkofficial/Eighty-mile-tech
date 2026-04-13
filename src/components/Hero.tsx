@@ -92,19 +92,19 @@ export default function Hero() {
 
       <HeroBackground activeIndex={activeSlide} />
 
-      <div className="hero-shell relative z-10 flex min-h-screen flex-col gap-6 py-14 md:gap-8 md:py-16 lg:gap-10 lg:py-18 xl:py-20">
+      <div className="hero-shell relative z-10 flex min-h-screen flex-col gap-5 py-12 md:gap-7 md:py-14 lg:gap-10 lg:py-18 xl:py-20">
         <motion.div
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="flex items-center gap-4 pt-3 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-[#5d6574] md:pt-4 md:text-[0.72rem] md:tracking-[0.32em]"
+          className="flex flex-wrap items-center gap-3 pt-2 text-[0.62rem] font-semibold uppercase tracking-[0.2em] text-[#5d6574] md:pt-4 md:gap-4 md:text-[0.72rem] md:tracking-[0.32em]"
         >
           <span>Eighy Mile</span>
           <span className="h-px w-14 bg-gradient-to-r from-[#d4b26a] to-transparent" />
           <span>Advanced digital systems</span>
         </motion.div>
 
-        <div className="grid gap-6 md:gap-8 lg:grid-cols-[1.12fr_0.88fr] lg:items-end lg:gap-10 xl:gap-14">
+        <div className="grid gap-5 md:gap-7 lg:grid-cols-[1.12fr_0.88fr] lg:items-end lg:gap-10 xl:gap-14">
           <div className="max-w-[72rem] pb-2 md:pb-4 lg:pb-8">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -119,7 +119,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.28 }}
-              className="serif-display max-w-[8.2em] text-[3.3rem] font-semibold leading-[0.88] tracking-[-0.05em] text-[#20242c] md:max-w-[7.6em] md:text-[4.65rem] lg:max-w-[7.3em] lg:text-[5.65rem] xl:max-w-[7.8em] xl:text-[7.1rem]"
+              className="serif-display max-w-[8.8em] text-[2.75rem] font-semibold leading-[0.9] tracking-[-0.045em] text-[#20242c] sm:text-[3.1rem] md:max-w-[7.6em] md:text-[4.15rem] lg:max-w-[7.3em] lg:text-[5.65rem] xl:max-w-[7.8em] xl:text-[7.1rem]"
             >
               Complex capabilities,
               <span className="block text-[#6d7785]">made clear, visual, and commercially useful.</span>
@@ -129,7 +129,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.42 }}
-              className="mt-5 max-w-[44rem] text-base leading-7 text-[#5d6574] md:mt-6 md:max-w-3xl md:text-[1.02rem] md:leading-8 lg:text-[1.08rem]"
+              className="mt-4 max-w-[44rem] text-[0.98rem] leading-7 text-[#5d6574] sm:text-base md:mt-5 md:max-w-3xl md:text-[1rem] md:leading-7 lg:text-[1.08rem] lg:leading-8"
             >
               We build immersive products, automation systems, enterprise platforms, secure
               infrastructure, and modernization programs that make businesses feel sharper on the
@@ -140,13 +140,13 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.54 }}
-              className="mt-7 flex flex-col gap-3 sm:flex-row md:mt-8"
+              className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-7"
             >
-              <a href="#contact" className="btn-primary flex items-center justify-center gap-2 text-base">
+              <a href="#contact" className="btn-primary flex items-center justify-center gap-2 text-sm sm:text-base">
                 Start a Project
                 <ArrowRight className="h-5 w-5" />
               </a>
-              <a href="#services" className="btn-secondary flex items-center justify-center gap-2 border-[#20242c]/10 bg-white/65 text-[#20242c] shadow-[0_18px_40px_rgba(38,45,56,0.08)] backdrop-blur-md">
+              <a href="#services" className="btn-secondary flex items-center justify-center gap-2 border-[#20242c]/10 bg-white/65 text-sm text-[#20242c] shadow-[0_18px_40px_rgba(38,45,56,0.08)] backdrop-blur-md sm:text-base">
                 View Services
               </a>
             </motion.div>
@@ -160,7 +160,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -18 }}
                 transition={{ duration: 0.65, ease: 'easeOut' }}
-                className="max-w-[24rem] rounded-[1.7rem] border border-white/70 bg-white/62 p-5 shadow-[0_24px_80px_rgba(38,45,56,0.1)] backdrop-blur-xl md:max-w-[25rem] md:p-6 lg:max-w-[26rem] lg:p-7 xl:p-8"
+                className="w-full max-w-[24rem] rounded-[1.45rem] border border-white/70 bg-white/68 p-4 shadow-[0_24px_80px_rgba(38,45,56,0.1)] backdrop-blur-xl sm:p-5 md:max-w-[25rem] md:rounded-[1.7rem] md:p-6 lg:max-w-[26rem] lg:p-7 xl:p-8"
               >
                 <p className="text-[0.68rem] font-semibold uppercase tracking-[0.32em] text-[#8b93a0]">
                   {String(activeSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}
@@ -168,10 +168,10 @@ export default function Hero() {
                 <p className="mt-3 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-[#d4b26a] md:mt-4 md:text-[0.72rem] md:tracking-[0.3em]">
                   {currentSlide.eyebrow}
                 </p>
-                <h2 className="serif-display mt-2 text-[2rem] font-semibold leading-none tracking-[-0.04em] text-[#20242c] md:mt-3 md:text-[2.5rem] lg:text-5xl">
+                <h2 className="serif-display mt-2 text-[1.6rem] font-semibold leading-none tracking-[-0.04em] text-[#20242c] sm:text-[1.8rem] md:mt-3 md:text-[2.25rem] lg:text-5xl">
                   {currentSlide.title}
                 </h2>
-                <p className="mt-3 text-sm leading-6 text-[#5d6574] md:mt-4 md:text-base md:leading-7 lg:text-lg">
+                <p className="mt-3 text-[0.92rem] leading-6 text-[#5d6574] md:mt-4 md:text-base md:leading-7 lg:text-lg">
                   {currentSlide.description}
                 </p>
               </motion.div>
@@ -183,24 +183,24 @@ export default function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.72 }}
-          className="mt-2 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3 xl:mt-4 xl:gap-4"
+          className="mt-1 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3 xl:mt-4 xl:gap-4"
         >
-          <div className="theme-panel rounded-[1.35rem] px-4 py-4 md:px-5 md:py-4.5">
+          <div className="theme-panel rounded-[1.2rem] px-4 py-3.5 md:px-5 md:py-4.5">
             <p className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-[#d4b26a] md:text-[0.68rem] md:tracking-[0.28em]">Immersive</p>
             <p className="mt-2 serif-display text-[1.85rem] font-semibold leading-none text-[#20242c] md:text-[2rem] xl:mt-3 xl:text-3xl">AR / VR / MR</p>
             <p className="mt-1.5 text-[0.88rem] leading-6 text-[#5d6574] md:text-sm md:leading-6 xl:mt-2 xl:leading-7">Spatial interfaces and guided simulations with premium interaction design.</p>
           </div>
-          <div className="theme-panel rounded-[1.35rem] px-4 py-4 md:px-5 md:py-4.5">
+          <div className="theme-panel rounded-[1.2rem] px-4 py-3.5 md:px-5 md:py-4.5">
             <p className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-[#d4b26a] md:text-[0.68rem] md:tracking-[0.28em]">Automation</p>
             <p className="mt-2 serif-display text-[1.85rem] font-semibold leading-none text-[#20242c] md:text-[2rem] xl:mt-3 xl:text-3xl">AI Systems</p>
             <p className="mt-1.5 text-[0.88rem] leading-6 text-[#5d6574] md:text-sm md:leading-6 xl:mt-2 xl:leading-7">Operational workflows that feel calm, fast, and commercially precise.</p>
           </div>
-          <div className="theme-panel rounded-[1.35rem] px-4 py-4 md:px-5 md:py-4.5">
+          <div className="theme-panel rounded-[1.2rem] px-4 py-3.5 md:px-5 md:py-4.5">
             <p className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-[#d4b26a] md:text-[0.68rem] md:tracking-[0.28em]">Platforms</p>
             <p className="mt-2 serif-display text-[1.85rem] font-semibold leading-none text-[#20242c] md:text-[2rem] xl:mt-3 xl:text-3xl">Enterprise Delivery</p>
             <p className="mt-1.5 text-[0.88rem] leading-6 text-[#5d6574] md:text-sm md:leading-6 xl:mt-2 xl:leading-7">Structured systems, portals, and data layers designed for scale.</p>
           </div>
-          <div className="theme-panel rounded-[1.35rem] px-4 py-4 md:px-5 md:py-4.5">
+          <div className="theme-panel rounded-[1.2rem] px-4 py-3.5 md:px-5 md:py-4.5">
             <p className="text-[0.62rem] font-semibold uppercase tracking-[0.24em] text-[#d4b26a] md:text-[0.68rem] md:tracking-[0.28em]">Security</p>
             <p className="mt-2 serif-display text-[1.85rem] font-semibold leading-none text-[#20242c] md:text-[2rem] xl:mt-3 xl:text-3xl">Resilient Control</p>
             <p className="mt-1.5 text-[0.88rem] leading-6 text-[#5d6574] md:text-sm md:leading-6 xl:mt-2 xl:leading-7">Protection-first engineering with visibility, reliability, and trust.</p>

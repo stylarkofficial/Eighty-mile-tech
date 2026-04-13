@@ -59,7 +59,7 @@ export default function Industries() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
           {industries.map((industry, i) => (
             <motion.div
               key={i}
@@ -68,7 +68,7 @@ export default function Industries() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group"
             >
-              <div className="theme-card relative h-full cursor-pointer overflow-hidden rounded-[1.5rem] p-6 transition-all duration-300 group-hover:-translate-y-2">
+              <div className="theme-card relative h-full cursor-pointer overflow-hidden rounded-[1.35rem] p-5 transition-all duration-300 group-hover:-translate-y-2 sm:p-6 md:rounded-[1.5rem]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#d4b26a]/0 to-transparent transition-all duration-300 group-hover:from-[#d4b26a]/8" />
 
                 <div className="relative z-10">
@@ -76,7 +76,7 @@ export default function Industries() {
                     <industry.icon className="h-6 w-6 text-[#d4b26a]" />
                   </div>
 
-                  <h3 className="serif-display mb-3 text-3xl font-semibold text-[#20242c] transition-colors duration-300 group-hover:text-[#d4b26a]">
+                  <h3 className="serif-display mb-3 text-[2rem] font-semibold leading-none text-[#20242c] transition-colors duration-300 group-hover:text-[#d4b26a] sm:text-[2.15rem] md:text-3xl">
                     {industry.name}
                   </h3>
 

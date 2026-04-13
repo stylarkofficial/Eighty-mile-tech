@@ -63,7 +63,7 @@ export default function WhyChooseUs() {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason, i) => (
             <motion.div
               key={i}
@@ -72,13 +72,13 @@ export default function WhyChooseUs() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className="group"
             >
-              <div className="theme-card h-full rounded-[1.5rem] p-7 transition-all duration-300 hover:-translate-y-2 md:p-8">
+              <div className="theme-card h-full rounded-[1.35rem] p-5 transition-all duration-300 hover:-translate-y-2 sm:p-6 md:rounded-[1.5rem] md:p-8">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white transition-all duration-300 group-hover:border-[#d4b26a]/30 group-hover:text-[#d4b26a]">
                     <reason.icon className="h-6 w-6 text-[#20242c]" />
                   </div>
                   <div>
-                    <h3 className="serif-display mb-3 text-3xl font-semibold text-[#20242c] transition-colors duration-300 group-hover:text-[#d4b26a]">
+                    <h3 className="serif-display mb-3 text-[2rem] font-semibold leading-none text-[#20242c] transition-colors duration-300 group-hover:text-[#d4b26a] sm:text-[2.2rem] md:text-3xl">
                       {reason.title}
                     </h3>
                     <p className="text-sm leading-7 text-[#5d6574]">{reason.description}</p>
@@ -93,7 +93,7 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="theme-panel mt-12 grid gap-5 rounded-[2rem] p-8 md:grid-cols-2 md:p-10"
+          className="theme-panel mt-10 grid gap-4 rounded-[1.6rem] p-6 md:mt-12 md:grid-cols-2 md:gap-5 md:rounded-[2rem] md:p-10"
         >
           {[
             'Dedicated project managers for every engagement',

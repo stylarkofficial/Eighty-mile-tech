@@ -71,26 +71,26 @@ export default function Solutions() {
           </p>
         </motion.div>
 
-        <div className="space-y-14">
+        <div className="space-y-10 md:space-y-12 lg:space-y-14">
           {solutions.map((solution, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: i * 0.15 }}
-              className={`flex flex-col items-center gap-8 lg:gap-12 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+              className={`flex flex-col items-center gap-6 md:gap-8 lg:gap-12 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
             >
               <div className="flex-1">
-                <div className="theme-panel h-full rounded-[2rem] p-8 md:p-10">
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white">
+                <div className="theme-panel h-full rounded-[1.6rem] p-5 sm:p-6 md:rounded-[2rem] md:p-8 lg:p-10">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-[#1f2937]/8 bg-white md:mb-6 md:h-14 md:w-14">
                     <solution.icon className="w-7 h-7 text-[#d4b26a]" />
                   </div>
 
-                  <h3 className="serif-display mb-4 text-4xl font-semibold text-[#20242c]">{solution.title}</h3>
+                  <h3 className="serif-display mb-3 text-[2rem] font-semibold leading-none text-[#20242c] sm:text-[2.2rem] md:mb-4 md:text-4xl">{solution.title}</h3>
 
-                  <p className="mb-6 leading-8 text-[#5d6574]">{solution.description}</p>
+                  <p className="mb-5 text-[0.96rem] leading-7 text-[#5d6574] md:mb-6 md:leading-8">{solution.description}</p>
 
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="mb-5 flex items-center gap-4 md:mb-6">
                     <div className="rounded-full border border-[#d4b26a]/30 bg-white/[0.03] px-4 py-2">
                       <span className="font-semibold text-[#d4b26a]">{solution.stats}</span>
                     </div>
@@ -107,20 +107,20 @@ export default function Solutions() {
               </div>
 
               <div className="flex-1">
-                <div className="group relative overflow-hidden rounded-[2rem] border border-[#1f2937]/8 shadow-[0_24px_70px_rgba(38,45,56,0.1)]">
+                <div className="group relative overflow-hidden rounded-[1.6rem] border border-[#1f2937]/8 shadow-[0_24px_70px_rgba(38,45,56,0.1)] md:rounded-[2rem]">
                   <img
                     src={solution.image}
                     alt={solution.title}
                     className="aspect-video w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent" />
-                  <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-white/50 bg-white/25 backdrop-blur-md">
+                  <div className="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-full border border-white/50 bg-white/25 backdrop-blur-md md:left-6 md:top-6 md:h-14 md:w-14">
                     <solution.icon className="w-7 h-7 text-white" />
                   </div>
-                  <div className="absolute bottom-6 left-6 right-6">
-                    <p className="serif-display text-3xl font-semibold text-white">{solution.title}</p>
+                  <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-6 md:right-6">
+                    <p className="serif-display text-[1.85rem] font-semibold leading-none text-white md:text-3xl">{solution.title}</p>
                   </div>
-                  <div className="absolute inset-0 rounded-[2rem] border-2 border-white/20 transition-colors duration-300 group-hover:border-[#d4b26a]/30" />
+                  <div className="absolute inset-0 rounded-[1.6rem] border-2 border-white/20 transition-colors duration-300 group-hover:border-[#d4b26a]/30 md:rounded-[2rem]" />
                 </div>
               </div>
             </motion.div>

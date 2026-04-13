@@ -131,14 +131,14 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid gap-8 md:gap-10 lg:grid-cols-2 lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="order-2 lg:order-2"
           >
-            <div className="theme-panel rounded-[2rem] p-8 md:p-10">
+            <div className="theme-panel rounded-[1.6rem] p-6 md:rounded-[2rem] md:p-10">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
@@ -265,7 +265,7 @@ export default function Contact() {
             className="order-1 space-y-8 lg:order-1"
           >
             <div className="theme-panel rounded-[2rem] p-8 md:p-10">
-              <h3 className="serif-display mb-6 text-4xl font-semibold text-[#20242c]">Get in Touch</h3>
+              <h3 className="serif-display mb-5 text-[2.25rem] font-semibold leading-none text-[#20242c] md:mb-6 md:text-4xl">Get in Touch</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -315,13 +315,13 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="theme-panel rounded-[2rem] p-8 md:p-10">
+            <div className="theme-panel rounded-[1.6rem] p-6 md:rounded-[2rem] md:p-10">
               <div className="flex items-start gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.05]">
                   <MapPin className="h-6 w-6 text-[#d4b26a]" />
                 </div>
                 <div>
-                  <h3 className="serif-display mb-2 text-3xl font-semibold text-[#20242c]">
+                  <h3 className="serif-display mb-2 text-[2rem] font-semibold leading-none text-[#20242c] md:text-3xl">
                     Our Presence
                   </h3>
                   <div className="space-y-1 leading-8 text-[#5d6574]">

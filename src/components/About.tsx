@@ -31,13 +31,13 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+        <div className="grid items-center gap-8 md:gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="serif-display mb-6 text-3xl font-semibold text-[#20242c] md:text-5xl">
+            <h3 className="serif-display mb-5 text-[2.2rem] font-semibold leading-[0.95] text-[#20242c] sm:text-[2.5rem] md:mb-6 md:text-5xl">
               Your technology partner when presentation and infrastructure both need to look exact.
             </h3>
             <p className="mb-6 max-w-2xl text-base leading-8 text-[#5d6574] md:text-lg">
@@ -64,7 +64,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative lg:pl-6"
           >
-            <div className="theme-panel rounded-[2rem] p-8 md:p-10 relative overflow-hidden">
+            <div className="theme-panel relative overflow-hidden rounded-[1.6rem] p-6 md:rounded-[2rem] md:p-10">
               <div className="absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-[#d4b26a]/60 to-transparent" />
               <div className="absolute bottom-0 right-0 h-40 w-40 rounded-full bg-[#d4b26a]/18 blur-3xl" />
 

@@ -95,7 +95,7 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, i) => (
             <motion.article
               key={service.title}
@@ -104,29 +104,29 @@ export default function Services() {
               transition={{ duration: 0.8, delay: i * 0.08 }}
               className="group"
             >
-              <div className="card-tilt theme-card relative h-full overflow-hidden rounded-[2rem]">
-                <div className="relative h-60 overflow-hidden">
+              <div className="card-tilt theme-card relative h-full overflow-hidden rounded-[1.6rem] md:rounded-[2rem]">
+                <div className="relative h-52 overflow-hidden sm:h-56 md:h-60">
                   <img
                     src={service.image}
                     alt={service.title}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(255,253,250,0.02)_0%,_rgba(32,36,44,0.16)_55%,_rgba(32,36,44,0.42)_100%)]" />
-                  <div className="absolute left-6 top-6 flex h-14 w-14 items-center justify-center rounded-full border border-white/60 bg-white/52 text-[#20242c] backdrop-blur-md">
+                  <div className="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-full border border-white/60 bg-white/52 text-[#20242c] backdrop-blur-md md:left-6 md:top-6 md:h-14 md:w-14">
                     <service.icon className="h-7 w-7" />
                   </div>
-                  <div className="absolute bottom-5 left-6 right-6">
+                  <div className="absolute bottom-4 left-4 right-4 md:bottom-5 md:left-6 md:right-6">
                     <span className="inline-flex rounded-full border border-white/60 bg-white/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.22em] text-[#5d6574] backdrop-blur-md">
                       Eighy Mile
                     </span>
                   </div>
                 </div>
 
-                <div className="p-8">
-                  <h3 className="serif-display mb-3 text-3xl font-semibold text-[#20242c]">{service.title}</h3>
-                  <p className="mb-6 leading-8 text-[#5d6574]">{service.description}</p>
+                <div className="p-5 sm:p-6 md:p-8">
+                  <h3 className="serif-display mb-3 text-[2rem] font-semibold leading-none text-[#20242c] sm:text-[2.15rem] md:text-3xl">{service.title}</h3>
+                  <p className="mb-5 text-[0.95rem] leading-7 text-[#5d6574] md:mb-6 md:leading-8">{service.description}</p>
 
-                  <ul className="mb-6 space-y-3">
+                  <ul className="mb-5 space-y-2.5 md:mb-6 md:space-y-3">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-3 text-sm text-[#5d6574]">
                         <span className="h-2 w-2 rounded-full bg-[#d4b26a]" />

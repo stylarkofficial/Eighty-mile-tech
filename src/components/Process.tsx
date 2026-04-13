@@ -143,14 +143,14 @@ export default function Process() {
           </div>
         </div>
 
-        <div className="space-y-8 lg:hidden">
+        <div className="space-y-6 lg:hidden">
           {steps.map((step, i) => (
             <motion.article
               key={step.title}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.08 }}
-              className="theme-card relative overflow-hidden rounded-[1.8rem] p-6"
+              className="theme-card relative overflow-hidden rounded-[1.5rem] p-5 sm:p-6"
             >
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(212,178,106,0.14),_transparent_32%)]" />
               <div className="relative z-10">
@@ -162,7 +162,7 @@ export default function Process() {
                     Step {i + 1}
                   </span>
                 </div>
-                <h3 className="serif-display text-4xl font-semibold text-[#20242c]">{step.title}</h3>
+                <h3 className="serif-display text-[2.2rem] font-semibold leading-none text-[#20242c] sm:text-4xl">{step.title}</h3>
                 <p className="mt-3 text-sm uppercase tracking-[0.2em] text-[#8b93a0]">{step.detail}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {step.outputs.map((output) => (

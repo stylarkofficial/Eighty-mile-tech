@@ -37,7 +37,7 @@ export default function Navigation() {
         }`}
       >
         <div
-          className={`content-shell flex items-center justify-between gap-6 rounded-full transition-all duration-300 ${
+          className={`content-shell flex items-center justify-between gap-3 rounded-full transition-all duration-300 md:gap-6 ${
             isScrolled
               ? 'border border-[#1f2937]/8 bg-white/72 py-3 shadow-[0_20px_50px_rgba(38,45,56,0.08)] backdrop-blur-xl'
               : 'py-2'
@@ -47,13 +47,13 @@ export default function Navigation() {
             <img
               src={logoImg}
               alt="Eighty Mile Tech"
-              className="h-12 w-auto object-contain md:h-14"
+              className="h-10 w-auto object-contain md:h-12 lg:h-14"
             />
             <div className="text-center leading-none">
-              <span className="block text-lg font-bold text-[#20242c] md:text-xl">
+              <span className="block text-[0.95rem] font-bold text-[#20242c] md:text-lg lg:text-xl">
                 Eighty Mile
               </span>
-              <span className="mt-1 block text-sm font-bold uppercase tracking-[0.16em] text-[#20242c] md:text-[0.95rem]">
+              <span className="mt-1 block text-[0.62rem] font-bold uppercase tracking-[0.14em] text-[#20242c] md:text-xs lg:text-[0.95rem]">
                 Tech
               </span>
             </div>
@@ -71,14 +71,14 @@ export default function Navigation() {
             ))}
           </div>
 
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden min-[1150px]:flex items-center gap-4">
             <a href="#contact" className="btn-primary text-sm">
               Begin a Project
             </a>
           </div>
 
           <button
-            className="lg:hidden rounded-full border border-[#1f2937]/10 bg-white/70 p-2 text-[#20242c] shadow-[0_10px_30px_rgba(38,45,56,0.08)]"
+            className="min-[1150px]:hidden rounded-full border border-[#1f2937]/10 bg-white/70 p-2 text-[#20242c] shadow-[0_10px_30px_rgba(38,45,56,0.08)]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
